@@ -4,6 +4,7 @@ import Sidebar from './components/Sidebar';
 import Header from './components/Header';
 import SimulateRoleModal from './components/SimulateRoleModal';
 import AuditReportModal from './components/AuditReportModal';
+import SupabaseAuthModal from './components/SupabaseAuthModal';
 import Dashboard from './pages/Dashboard';
 import CareerExplorer from './pages/CareerExplorer';
 import LearningPath from './pages/LearningPath';
@@ -13,11 +14,13 @@ import SkillIntelligence from './pages/SkillIntelligence';
 import ProjectsStudio from './pages/ProjectsStudio';
 import AnalyticsDashboard from './pages/AnalyticsDashboard';
 import NotificationsPage from './pages/NotificationsPage';
+import AuthPage from './pages/AuthPage';
 
 export default function App() {
   const [profile, setProfile] = useState(null);
   const [isRoleModalOpen, setIsRoleModalOpen] = useState(false);
   const [isAuditModalOpen, setIsAuditModalOpen] = useState(false);
+  const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
 
   const fetchProfile = () => {
     fetch('/api/profile')
@@ -52,6 +55,7 @@ export default function App() {
             profile={profile}
             onOpenRoleModal={() => setIsRoleModalOpen(true)}
             onOpenAuditModal={() => setIsAuditModalOpen(true)}
+            onOpenAuthModal={() => setIsAuthModalOpen(true)}
             onProfileSwitched={(newProfile) => setProfile(newProfile)}
           />
 
@@ -148,12 +152,71 @@ export default function App() {
                   />
                 }
               />
+              <Route
+                path="/login"
+                element={
+                  <AuthPage
+                    onAuthSuccess={(user) => {
+                      setProfile(prev => ({
+                        ...prev,
+                        name: user.user_metadata?.name || user.email.split('@')[0],
+                        email: user.email,
+                        targetRole: user.user_metadata?.targetRole || 'Data Scientist'
+                      }));
+                    }}
+                  />
+                }
+              />
+              <Route
+                path="/signup"
+                element={
+                  <AuthPage
+                    isSignUpDefault={true}
+                    onAuthSuccess={(user) => {
+                      setProfile(prev => ({
+                        ...prev,
+                        name: user.user_metadata?.name || user.email.split('@')[0],
+                        email: user.email,
+                        targetRole: user.user_metadata?.targetRole || 'Data Scientist'
+                      }));
+                    }}
+                  />
+                }
+              />
+              <Route
+                path="/auth"
+                element={
+                  <AuthPage
+                    onAuthSuccess={(user) => {
+                      setProfile(prev => ({
+                        ...prev,
+                        name: user.user_metadata?.name || user.email.split('@')[0],
+                        email: user.email,
+                        targetRole: user.user_metadata?.targetRole || 'Data Scientist'
+                      }));
+                    }}
+                  />
+                }
+              />
               <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
           </main>
         </div>
 
-        {/* Global Modals */}
+        {/* Global Modals (Root Stacking Context - No Overlap) */}
+        <SupabaseAuthModal
+          isOpen={isAuthModalOpen}
+          onClose={() => setIsAuthModalOpen(false)}
+          onAuthSuccess={(user) => {
+            setProfile(prev => ({
+              ...prev,
+              name: user.user_metadata?.name || user.email.split('@')[0],
+              email: user.email,
+              targetRole: user.user_metadata?.targetRole || 'Data Scientist'
+            }));
+          }}
+        />
+
         <SimulateRoleModal
           isOpen={isRoleModalOpen}
           onClose={() => setIsRoleModalOpen(false)}

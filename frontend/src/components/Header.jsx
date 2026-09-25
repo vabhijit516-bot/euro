@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import NotificationCenterPopover from './NotificationCenterPopover';
 import ResourceSearchModal from './ResourceSearchModal';
-import SupabaseAuthModal from './SupabaseAuthModal';
 
-export default function Header({ profile, onOpenRoleModal, onOpenAuditModal, onProfileSwitched }) {
+export default function Header({ profile, onOpenRoleModal, onOpenAuditModal, onOpenAuthModal, onProfileSwitched }) {
   const [isNotifOpen, setIsNotifOpen] = useState(false);
   const [isSearchModalOpen, setIsSearchModalOpen] = useState(false);
-  const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
   const [unreadCount, setUnreadCount] = useState(3);
   const [profiles, setProfiles] = useState([]);
   const [activeId, setActiveId] = useState('alex');
@@ -162,7 +160,7 @@ export default function Header({ profile, onOpenRoleModal, onOpenAuditModal, onP
 
         {/* Supabase Auth & Login Button */}
         <button
-          onClick={() => setIsAuthModalOpen(true)}
+          onClick={onOpenAuthModal}
           className="px-3 py-1.5 rounded-lg bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border border-emerald-200 text-xs font-bold font-mono flex items-center gap-1.5 transition-colors cursor-pointer"
           title="Sign In / Register with Supabase"
         >
@@ -211,22 +209,6 @@ export default function Header({ profile, onOpenRoleModal, onOpenAuditModal, onP
       <ResourceSearchModal
         isOpen={isSearchModalOpen}
         onClose={() => setIsSearchModalOpen(false)}
-      />
-
-      {/* Supabase Authentication & Resend Modal */}
-      <SupabaseAuthModal
-        isOpen={isAuthModalOpen}
-        onClose={() => setIsAuthModalOpen(false)}
-        onAuthSuccess={(user) => {
-          if (onProfileSwitched) {
-            onProfileSwitched({
-              ...profile,
-              name: user.user_metadata?.name || user.email.split('@')[0],
-              email: user.email,
-              targetRole: user.user_metadata?.targetRole || 'Data Scientist'
-            });
-          }
-        }}
       />
       {/* Email Dispatch Confirmation Toast */}
       {emailStatusMsg && (
