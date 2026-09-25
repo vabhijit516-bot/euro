@@ -1,6 +1,7 @@
 -- ==============================================================================
 -- CAREERAI: SUPABASE DATABASE INITIALIZATION SCHEMA
 -- Run this in your Supabase SQL Editor (https://supabase.com/dashboard/project/_/sql)
+-- Saves profiles, login info, authorization providers (Google, GitHub, Email), and progress
 -- ==============================================================================
 
 -- 1. Enable UUID Extension
@@ -20,6 +21,8 @@ CREATE TABLE IF NOT EXISTS public.profiles (
   learning_momentum INT DEFAULT 56,
   hours_logged NUMERIC DEFAULT 18.5,
   compensation_band TEXT DEFAULT '$135k – $165k',
+  auth_provider TEXT DEFAULT 'email', -- 'google', 'github', 'email'
+  last_sign_in_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
   created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
   updated_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
 );
@@ -83,14 +86,27 @@ CREATE TABLE IF NOT EXISTS public.notifications (
   created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
 );
 
--- 7. Row Level Security (RLS) Policies
+-- 7. User Logins & Authorization History Table (Google, GitHub, Email tracking)
+CREATE TABLE IF NOT EXISTS public.user_logins (
+  id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+  user_id UUID REFERENCES auth.users(id) ON DELETE CASCADE,
+  email TEXT NOT NULL,
+  provider TEXT NOT NULL DEFAULT 'email', -- 'google', 'github', 'email'
+  user_name TEXT,
+  ip_address TEXT,
+  user_agent TEXT,
+  logged_in_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
+);
+
+-- 8. Row Level Security (RLS) Policies
 ALTER TABLE public.profiles ENABLE ROW LEVEL SECURITY;
 ALTER TABLE public.skills ENABLE ROW LEVEL SECURITY;
 ALTER TABLE public.learning_plans ENABLE ROW LEVEL SECURITY;
 ALTER TABLE public.resumes ENABLE ROW LEVEL SECURITY;
 ALTER TABLE public.notifications ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public.user_logins ENABLE ROW LEVEL SECURITY;
 
--- Allow users to read/update their own profile
+-- Allow users to manage own profile
 CREATE POLICY "Users can manage own profile"
   ON public.profiles FOR ALL
   USING (auth.uid() = id);
@@ -115,17 +131,61 @@ CREATE POLICY "Users can manage own notifications"
   ON public.notifications FOR ALL
   USING (auth.uid() = user_id);
 
--- 8. Auto-create Profile Trigger on User Signup
+-- Allow users to view own login history
+CREATE POLICY "Users can view own login history"
+  ON public.user_logins FOR ALL
+  USING (auth.uid() = user_id);
+
+-- 9. Auto-create Profile & Record Login Trigger on User Signup
 CREATE OR REPLACE FUNCTION public.handle_new_user()
 RETURNS TRIGGER AS $$
+DECLARE
+  v_provider TEXT;
+  v_name TEXT;
+  v_avatar TEXT;
 BEGIN
-  INSERT INTO public.profiles (id, email, name, avatar_url)
+  -- Detect provider (Google, GitHub, or Email)
+  v_provider := COALESCE(NEW.raw_app_meta_data->>'provider', 'email');
+  
+  -- Extract name from metadata
+  v_name := COALESCE(
+    NEW.raw_user_meta_data->>'name',
+    NEW.raw_user_meta_data->>'full_name',
+    NEW.raw_user_meta_data->>'user_name',
+    split_part(NEW.email, '@', 1)
+  );
+
+  -- Extract avatar
+  v_avatar := COALESCE(
+    NEW.raw_user_meta_data->>'avatar_url',
+    NEW.raw_user_meta_data->>'picture',
+    'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150'
+  );
+
+  -- Insert Profile
+  INSERT INTO public.profiles (id, email, name, avatar_url, auth_provider, last_sign_in_at)
   VALUES (
     NEW.id,
     NEW.email,
-    COALESCE(NEW.raw_user_meta_data->>'name', split_part(NEW.email, '@', 1)),
-    COALESCE(NEW.raw_user_meta_data->>'avatar_url', 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150')
+    v_name,
+    v_avatar,
+    v_provider,
+    NOW()
+  )
+  ON CONFLICT (id) DO UPDATE SET
+    last_sign_in_at = NOW(),
+    auth_provider = EXCLUDED.auth_provider,
+    updated_at = NOW();
+
+  -- Record Initial Login Event
+  INSERT INTO public.user_logins (user_id, email, provider, user_name)
+  VALUES (
+    NEW.id,
+    NEW.email,
+    v_provider,
+    v_name
   );
+
   RETURN NEW;
 END;
 $$ LANGUAGE plpgsql SECURITY DEFINER;

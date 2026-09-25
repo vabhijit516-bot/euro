@@ -5,6 +5,7 @@ import Header from './components/Header';
 import SimulateRoleModal from './components/SimulateRoleModal';
 import AuditReportModal from './components/AuditReportModal';
 import SupabaseAuthModal from './components/SupabaseAuthModal';
+import { supabase } from './config/supabase';
 import Dashboard from './pages/Dashboard';
 import CareerExplorer from './pages/CareerExplorer';
 import LearningPath from './pages/LearningPath';
@@ -33,6 +34,46 @@ export default function App() {
 
   useEffect(() => {
     fetchProfile();
+
+    // Listen to Supabase Auth state changes (Google, GitHub, Email logins)
+    const { data: { subscription } } = supabase.auth.onAuthStateChange(async (event, session) => {
+      if ((event === 'SIGNED_IN' || event === 'USER_UPDATED') && session?.user) {
+        const u = session.user;
+        const provider = u.app_metadata?.provider || 'email';
+        const userName = u.user_metadata?.name || u.user_metadata?.full_name || u.user_metadata?.user_name || (u.email ? u.email.split('@')[0] : 'Student');
+        const avatarUrl = u.user_metadata?.avatar_url || u.user_metadata?.picture || 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150';
+
+        // Update profile in local state
+        setProfile(prev => ({
+          ...prev,
+          name: userName,
+          email: u.email,
+          avatar: avatarUrl,
+          authProvider: provider
+        }));
+
+        // Record login info in Supabase user_logins & profiles tables
+        try {
+          await fetch('/api/auth/record-login', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              userId: u.id,
+              email: u.email,
+              provider,
+              userName,
+              avatarUrl
+            })
+          });
+        } catch (e) {
+          console.error('Failed to log auth session:', e);
+        }
+      }
+    });
+
+    return () => {
+      subscription?.unsubscribe();
+    };
   }, []);
 
   const handleRoleSimulated = (updatedProfile) => {
