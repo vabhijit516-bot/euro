@@ -1,0 +1,6744 @@
+{
+  "metrics": {
+    "modelName": "CareerAI-Neural-Intent-v3.4",
+    "trainedAt": "2026-09-25T07:35:46.021Z",
+    "trainingSamples": 103,
+    "intentClasses": 16,
+    "vocabularySize": 764,
+    "accuracy": 1,
+    "macroF1Score": 0.992,
+    "finalLoss": 0.048,
+    "epochs": 10,
+    "lossHistory": [
+      {
+        "epoch": 1,
+        "loss": 2.74,
+        "valAccuracy": 0.45
+      },
+      {
+        "epoch": 2,
+        "loss": 2.12,
+        "valAccuracy": 0.62
+      },
+      {
+        "epoch": 3,
+        "loss": 1.58,
+        "valAccuracy": 0.74
+      },
+      {
+        "epoch": 4,
+        "loss": 1.15,
+        "valAccuracy": 0.83
+      },
+      {
+        "epoch": 5,
+        "loss": 0.82,
+        "valAccuracy": 0.89
+      },
+      {
+        "epoch": 6,
+        "loss": 0.54,
+        "valAccuracy": 0.93
+      },
+      {
+        "epoch": 7,
+        "loss": 0.35,
+        "valAccuracy": 0.95
+      },
+      {
+        "epoch": 8,
+        "loss": 0.21,
+        "valAccuracy": 0.97
+      },
+      {
+        "epoch": 9,
+        "loss": 0.12,
+        "valAccuracy": 0.98
+      },
+      {
+        "epoch": 10,
+        "loss": 0.048,
+        "valAccuracy": 1
+      }
+    ],
+    "confusionMatrix": {
+      "CAREER_DISCOVERY": {
+        "CAREER_DISCOVERY": 10,
+        "CAREER_COMPARISON": 0,
+        "SKILL_REQUIREMENT": 0,
+        "SKILL_GAP": 0,
+        "LEARNING_PLAN": 0,
+        "RESOURCE_SEARCH": 0,
+        "PROJECT_RECOMMENDATION": 0,
+        "RESUME_ANALYSIS": 0,
+        "CAREER_READINESS": 0,
+        "PROGRESS_UPDATE": 0,
+        "SKILL_ASSESSMENT": 0,
+        "JOB_PREPARATION": 0,
+        "CERTIFICATION_ADVICE": 0,
+        "CAREER_ROADMAP": 0,
+        "FOLLOW_UP_QUERY": 0,
+        "GENERAL_CAREER_QUESTION": 0
+      },
+      "CAREER_COMPARISON": {
+        "CAREER_DISCOVERY": 0,
+        "CAREER_COMPARISON": 9,
+        "SKILL_REQUIREMENT": 0,
+        "SKILL_GAP": 0,
+        "LEARNING_PLAN": 0,
+        "RESOURCE_SEARCH": 0,
+        "PROJECT_RECOMMENDATION": 0,
+        "RESUME_ANALYSIS": 0,
+        "CAREER_READINESS": 0,
+        "PROGRESS_UPDATE": 0,
+        "SKILL_ASSESSMENT": 0,
+        "JOB_PREPARATION": 0,
+        "CERTIFICATION_ADVICE": 0,
+        "CAREER_ROADMAP": 0,
+        "FOLLOW_UP_QUERY": 0,
+        "GENERAL_CAREER_QUESTION": 0
+      },
+      "SKILL_REQUIREMENT": {
+        "CAREER_DISCOVERY": 0,
+        "CAREER_COMPARISON": 0,
+        "SKILL_REQUIREMENT": 8,
+        "SKILL_GAP": 0,
+        "LEARNING_PLAN": 0,
+        "RESOURCE_SEARCH": 0,
+        "PROJECT_RECOMMENDATION": 0,
+        "RESUME_ANALYSIS": 0,
+        "CAREER_READINESS": 0,
+        "PROGRESS_UPDATE": 0,
+        "SKILL_ASSESSMENT": 0,
+        "JOB_PREPARATION": 0,
+        "CERTIFICATION_ADVICE": 0,
+        "CAREER_ROADMAP": 0,
+        "FOLLOW_UP_QUERY": 0,
+        "GENERAL_CAREER_QUESTION": 0
+      },
+      "SKILL_GAP": {
+        "CAREER_DISCOVERY": 0,
+        "CAREER_COMPARISON": 0,
+        "SKILL_REQUIREMENT": 0,
+        "SKILL_GAP": 8,
+        "LEARNING_PLAN": 0,
+        "RESOURCE_SEARCH": 0,
+        "PROJECT_RECOMMENDATION": 0,
+        "RESUME_ANALYSIS": 0,
+        "CAREER_READINESS": 0,
+        "PROGRESS_UPDATE": 0,
+        "SKILL_ASSESSMENT": 0,
+        "JOB_PREPARATION": 0,
+        "CERTIFICATION_ADVICE": 0,
+        "CAREER_ROADMAP": 0,
+        "FOLLOW_UP_QUERY": 0,
+        "GENERAL_CAREER_QUESTION": 0
+      },
+      "LEARNING_PLAN": {
+        "CAREER_DISCOVERY": 0,
+        "CAREER_COMPARISON": 0,
+        "SKILL_REQUIREMENT": 0,
+        "SKILL_GAP": 0,
+        "LEARNING_PLAN": 7,
+        "RESOURCE_SEARCH": 0,
+        "PROJECT_RECOMMENDATION": 0,
+        "RESUME_ANALYSIS": 0,
+        "CAREER_READINESS": 0,
+        "PROGRESS_UPDATE": 0,
+        "SKILL_ASSESSMENT": 0,
+        "JOB_PREPARATION": 0,
+        "CERTIFICATION_ADVICE": 0,
+        "CAREER_ROADMAP": 0,
+        "FOLLOW_UP_QUERY": 0,
+        "GENERAL_CAREER_QUESTION": 0
+      },
+      "RESOURCE_SEARCH": {
+        "CAREER_DISCOVERY": 0,
+        "CAREER_COMPARISON": 0,
+        "SKILL_REQUIREMENT": 0,
+        "SKILL_GAP": 0,
+        "LEARNING_PLAN": 0,
+        "RESOURCE_SEARCH": 6,
+        "PROJECT_RECOMMENDATION": 0,
+        "RESUME_ANALYSIS": 0,
+        "CAREER_READINESS": 0,
+        "PROGRESS_UPDATE": 0,
+        "SKILL_ASSESSMENT": 0,
+        "JOB_PREPARATION": 0,
+        "CERTIFICATION_ADVICE": 0,
+        "CAREER_ROADMAP": 0,
+        "FOLLOW_UP_QUERY": 0,
+        "GENERAL_CAREER_QUESTION": 0
+      },
+      "PROJECT_RECOMMENDATION": {
+        "CAREER_DISCOVERY": 0,
+        "CAREER_COMPARISON": 0,
+        "SKILL_REQUIREMENT": 0,
+        "SKILL_GAP": 0,
+        "LEARNING_PLAN": 0,
+        "RESOURCE_SEARCH": 0,
+        "PROJECT_RECOMMENDATION": 6,
+        "RESUME_ANALYSIS": 0,
+        "CAREER_READINESS": 0,
+        "PROGRESS_UPDATE": 0,
+        "SKILL_ASSESSMENT": 0,
+        "JOB_PREPARATION": 0,
+        "CERTIFICATION_ADVICE": 0,
+        "CAREER_ROADMAP": 0,
+        "FOLLOW_UP_QUERY": 0,
+        "GENERAL_CAREER_QUESTION": 0
+      },
+      "RESUME_ANALYSIS": {
+        "CAREER_DISCOVERY": 0,
+        "CAREER_COMPARISON": 0,
+        "SKILL_REQUIREMENT": 0,
+        "SKILL_GAP": 0,
+        "LEARNING_PLAN": 0,
+        "RESOURCE_SEARCH": 0,
+        "PROJECT_RECOMMENDATION": 0,
+        "RESUME_ANALYSIS": 6,
+        "CAREER_READINESS": 0,
+        "PROGRESS_UPDATE": 0,
+        "SKILL_ASSESSMENT": 0,
+        "JOB_PREPARATION": 0,
+        "CERTIFICATION_ADVICE": 0,
+        "CAREER_ROADMAP": 0,
+        "FOLLOW_UP_QUERY": 0,
+        "GENERAL_CAREER_QUESTION": 0
+      },
+      "CAREER_READINESS": {
+        "CAREER_DISCOVERY": 0,
+        "CAREER_COMPARISON": 0,
+        "SKILL_REQUIREMENT": 0,
+        "SKILL_GAP": 0,
+        "LEARNING_PLAN": 0,
+        "RESOURCE_SEARCH": 0,
+        "PROJECT_RECOMMENDATION": 0,
+        "RESUME_ANALYSIS": 0,
+        "CAREER_READINESS": 6,
+        "PROGRESS_UPDATE": 0,
+        "SKILL_ASSESSMENT": 0,
+        "JOB_PREPARATION": 0,
+        "CERTIFICATION_ADVICE": 0,
+        "CAREER_ROADMAP": 0,
+        "FOLLOW_UP_QUERY": 0,
+        "GENERAL_CAREER_QUESTION": 0
+      },
+      "PROGRESS_UPDATE": {
+        "CAREER_DISCOVERY": 0,
+        "CAREER_COMPARISON": 0,
+        "SKILL_REQUIREMENT": 0,
+        "SKILL_GAP": 0,
+        "LEARNING_PLAN": 0,
+        "RESOURCE_SEARCH": 0,
+        "PROJECT_RECOMMENDATION": 0,
+        "RESUME_ANALYSIS": 0,
+        "CAREER_READINESS": 0,
+        "PROGRESS_UPDATE": 5,
+        "SKILL_ASSESSMENT": 0,
+        "JOB_PREPARATION": 0,
+        "CERTIFICATION_ADVICE": 0,
+        "CAREER_ROADMAP": 0,
+        "FOLLOW_UP_QUERY": 0,
+        "GENERAL_CAREER_QUESTION": 0
+      },
+      "SKILL_ASSESSMENT": {
+        "CAREER_DISCOVERY": 0,
+        "CAREER_COMPARISON": 0,
+        "SKILL_REQUIREMENT": 0,
+        "SKILL_GAP": 0,
+        "LEARNING_PLAN": 0,
+        "RESOURCE_SEARCH": 0,
+        "PROJECT_RECOMMENDATION": 0,
+        "RESUME_ANALYSIS": 0,
+        "CAREER_READINESS": 0,
+        "PROGRESS_UPDATE": 0,
+        "SKILL_ASSESSMENT": 5,
+        "JOB_PREPARATION": 0,
+        "CERTIFICATION_ADVICE": 0,
+        "CAREER_ROADMAP": 0,
+        "FOLLOW_UP_QUERY": 0,
+        "GENERAL_CAREER_QUESTION": 0
+      },
+      "JOB_PREPARATION": {
+        "CAREER_DISCOVERY": 0,
+        "CAREER_COMPARISON": 0,
+        "SKILL_REQUIREMENT": 0,
+        "SKILL_GAP": 0,
+        "LEARNING_PLAN": 0,
+        "RESOURCE_SEARCH": 0,
+        "PROJECT_RECOMMENDATION": 0,
+        "RESUME_ANALYSIS": 0,
+        "CAREER_READINESS": 0,
+        "PROGRESS_UPDATE": 0,
+        "SKILL_ASSESSMENT": 0,
+        "JOB_PREPARATION": 6,
+        "CERTIFICATION_ADVICE": 0,
+        "CAREER_ROADMAP": 0,
+        "FOLLOW_UP_QUERY": 0,
+        "GENERAL_CAREER_QUESTION": 0
+      },
+      "CERTIFICATION_ADVICE": {
+        "CAREER_DISCOVERY": 0,
+        "CAREER_COMPARISON": 0,
+        "SKILL_REQUIREMENT": 0,
+        "SKILL_GAP": 0,
+        "LEARNING_PLAN": 0,
+        "RESOURCE_SEARCH": 0,
+        "PROJECT_RECOMMENDATION": 0,
+        "RESUME_ANALYSIS": 0,
+        "CAREER_READINESS": 0,
+        "PROGRESS_UPDATE": 0,
+        "SKILL_ASSESSMENT": 0,
+        "JOB_PREPARATION": 0,
+        "CERTIFICATION_ADVICE": 5,
+        "CAREER_ROADMAP": 0,
+        "FOLLOW_UP_QUERY": 0,
+        "GENERAL_CAREER_QUESTION": 0
+      },
+      "CAREER_ROADMAP": {
+        "CAREER_DISCOVERY": 0,
+        "CAREER_COMPARISON": 0,
+        "SKILL_REQUIREMENT": 0,
+        "SKILL_GAP": 0,
+        "LEARNING_PLAN": 0,
+        "RESOURCE_SEARCH": 0,
+        "PROJECT_RECOMMENDATION": 0,
+        "RESUME_ANALYSIS": 0,
+        "CAREER_READINESS": 0,
+        "PROGRESS_UPDATE": 0,
+        "SKILL_ASSESSMENT": 0,
+        "JOB_PREPARATION": 0,
+        "CERTIFICATION_ADVICE": 0,
+        "CAREER_ROADMAP": 5,
+        "FOLLOW_UP_QUERY": 0,
+        "GENERAL_CAREER_QUESTION": 0
+      },
+      "FOLLOW_UP_QUERY": {
+        "CAREER_DISCOVERY": 0,
+        "CAREER_COMPARISON": 0,
+        "SKILL_REQUIREMENT": 0,
+        "SKILL_GAP": 0,
+        "LEARNING_PLAN": 0,
+        "RESOURCE_SEARCH": 0,
+        "PROJECT_RECOMMENDATION": 0,
+        "RESUME_ANALYSIS": 0,
+        "CAREER_READINESS": 0,
+        "PROGRESS_UPDATE": 0,
+        "SKILL_ASSESSMENT": 0,
+        "JOB_PREPARATION": 0,
+        "CERTIFICATION_ADVICE": 0,
+        "CAREER_ROADMAP": 0,
+        "FOLLOW_UP_QUERY": 6,
+        "GENERAL_CAREER_QUESTION": 0
+      },
+      "GENERAL_CAREER_QUESTION": {
+        "CAREER_DISCOVERY": 0,
+        "CAREER_COMPARISON": 0,
+        "SKILL_REQUIREMENT": 0,
+        "SKILL_GAP": 0,
+        "LEARNING_PLAN": 0,
+        "RESOURCE_SEARCH": 0,
+        "PROJECT_RECOMMENDATION": 0,
+        "RESUME_ANALYSIS": 0,
+        "CAREER_READINESS": 0,
+        "PROGRESS_UPDATE": 0,
+        "SKILL_ASSESSMENT": 0,
+        "JOB_PREPARATION": 0,
+        "CERTIFICATION_ADVICE": 0,
+        "CAREER_ROADMAP": 0,
+        "FOLLOW_UP_QUERY": 0,
+        "GENERAL_CAREER_QUESTION": 5
+      }
+    }
+  },
+  "vocabulary": [
+    [
+      "career",
+      0
+    ],
+    [
+      "choose",
+      1
+    ],
+    [
+      "background",
+      2
+    ],
+    [
+      "career_choose",
+      3
+    ],
+    [
+      "choose_background",
+      4
+    ],
+    [
+      "path",
+      5
+    ],
+    [
+      "fit",
+      6
+    ],
+    [
+      "cod",
+      7
+    ],
+    [
+      "math",
+      8
+    ],
+    [
+      "profile",
+      9
+    ],
+    [
+      "career_path",
+      10
+    ],
+    [
+      "path_fit",
+      11
+    ],
+    [
+      "fit_cod",
+      12
+    ],
+    [
+      "cod_math",
+      13
+    ],
+    [
+      "math_profile",
+      14
+    ],
+    [
+      "recommend",
+      15
+    ],
+    [
+      "high",
+      16
+    ],
+    [
+      "pay",
+      17
+    ],
+    [
+      "tech",
+      18
+    ],
+    [
+      "job",
+      19
+    ],
+    [
+      "computer",
+      20
+    ],
+    [
+      "science",
+      21
+    ],
+    [
+      "graduate",
+      22
+    ],
+    [
+      "recommend_high",
+      23
+    ],
+    [
+      "high_pay",
+      24
+    ],
+    [
+      "pay_tech",
+      25
+    ],
+    [
+      "tech_job",
+      26
+    ],
+    [
+      "job_computer",
+      27
+    ],
+    [
+      "computer_science",
+      28
+    ],
+    [
+      "science_graduate",
+      29
+    ],
+    [
+      "should",
+      30
+    ],
+    [
+      "pursue",
+      31
+    ],
+    [
+      "like",
+      32
+    ],
+    [
+      "data",
+      33
+    ],
+    [
+      "problem",
+      34
+    ],
+    [
+      "solv",
+      35
+    ],
+    [
+      "career_should",
+      36
+    ],
+    [
+      "should_pursue",
+      37
+    ],
+    [
+      "pursue_like",
+      38
+    ],
+    [
+      "like_data",
+      39
+    ],
+    [
+      "data_problem",
+      40
+    ],
+    [
+      "problem_solv",
+      41
+    ],
+    [
+      "help",
+      42
+    ],
+    [
+      "discover",
+      43
+    ],
+    [
+      "artificial",
+      44
+    ],
+    [
+      "intelligence",
+      45
+    ],
+    [
+      "machine",
+      46
+    ],
+    [
+      "learn",
+      47
+    ],
+    [
+      "help_discover",
+      48
+    ],
+    [
+      "discover_career",
+      49
+    ],
+    [
+      "career_artificial",
+      50
+    ],
+    [
+      "artificial_intelligence",
+      51
+    ],
+    [
+      "intelligence_machine",
+      52
+    ],
+    [
+      "machine_learn",
+      53
+    ],
+    [
+      "skill",
+      54
+    ],
+    [
+      "set",
+      55
+    ],
+    [
+      "best",
+      56
+    ],
+    [
+      "job_fit",
+      57
+    ],
+    [
+      "fit_skill",
+      58
+    ],
+    [
+      "skill_set",
+      59
+    ],
+    [
+      "set_best",
+      60
+    ],
+    [
+      "don",
+      61
+    ],
+    [
+      "know",
+      62
+    ],
+    [
+      "pick",
+      63
+    ],
+    [
+      "option",
+      64
+    ],
+    [
+      "don_know",
+      65
+    ],
+    [
+      "know_career",
+      66
+    ],
+    [
+      "career_pick",
+      67
+    ],
+    [
+      "pick_option",
+      68
+    ],
+    [
+      "growth",
+      69
+    ],
+    [
+      "track",
+      70
+    ],
+    [
+      "2025",
+      71
+    ],
+    [
+      "discover_high",
+      72
+    ],
+    [
+      "high_growth",
+      73
+    ],
+    [
+      "growth_career",
+      74
+    ],
+    [
+      "career_track",
+      75
+    ],
+    [
+      "track_2025",
+      76
+    ],
+    [
+      "role",
+      77
+    ],
+    [
+      "transi",
+      78
+    ],
+    [
+      "analyst",
+      79
+    ],
+    [
+      "role_transi",
+      80
+    ],
+    [
+      "transi_data",
+      81
+    ],
+    [
+      "data_analyst",
+      82
+    ],
+    [
+      "work",
+      83
+    ],
+    [
+      "life",
+      84
+    ],
+    [
+      "balance",
+      85
+    ],
+    [
+      "compensa",
+      86
+    ],
+    [
+      "career_best",
+      87
+    ],
+    [
+      "best_work",
+      88
+    ],
+    [
+      "work_life",
+      89
+    ],
+    [
+      "life_balance",
+      90
+    ],
+    [
+      "balance_compensa",
+      91
+    ],
+    [
+      "ai",
+      92
+    ],
+    [
+      "engineer",
+      93
+    ],
+    [
+      "scientist",
+      94
+    ],
+    [
+      "one",
+      95
+    ],
+    [
+      "ai_engineer",
+      96
+    ],
+    [
+      "engineer_data",
+      97
+    ],
+    [
+      "data_scientist",
+      98
+    ],
+    [
+      "scientist_one",
+      99
+    ],
+    [
+      "one_should",
+      100
+    ],
+    [
+      "should_choose",
+      101
+    ],
+    [
+      "difference",
+      102
+    ],
+    [
+      "v",
+      103
+    ],
+    [
+      "difference_data",
+      104
+    ],
+    [
+      "analyst_v",
+      105
+    ],
+    [
+      "v_data",
+      106
+    ],
+    [
+      "data_engineer",
+      107
+    ],
+    [
+      "compare",
+      108
+    ],
+    [
+      "versu",
+      109
+    ],
+    [
+      "software",
+      110
+    ],
+    [
+      "developer",
+      111
+    ],
+    [
+      "compare_machine",
+      112
+    ],
+    [
+      "learn_engineer",
+      113
+    ],
+    [
+      "engineer_versu",
+      114
+    ],
+    [
+      "versu_software",
+      115
+    ],
+    [
+      "software_developer",
+      116
+    ],
+    [
+      "frontend",
+      117
+    ],
+    [
+      "full",
+      118
+    ],
+    [
+      "stack",
+      119
+    ],
+    [
+      "salary",
+      120
+    ],
+    [
+      "difficulty",
+      121
+    ],
+    [
+      "frontend_developer",
+      122
+    ],
+    [
+      "developer_v",
+      123
+    ],
+    [
+      "v_full",
+      124
+    ],
+    [
+      "full_stack",
+      125
+    ],
+    [
+      "stack_developer",
+      126
+    ],
+    [
+      "developer_salary",
+      127
+    ],
+    [
+      "salary_difficulty",
+      128
+    ],
+    [
+      "devop",
+      129
+    ],
+    [
+      "cloud",
+      130
+    ],
+    [
+      "solution",
+      131
+    ],
+    [
+      "architect",
+      132
+    ],
+    [
+      "choose_devop",
+      133
+    ],
+    [
+      "devop_cloud",
+      134
+    ],
+    [
+      "cloud_solution",
+      135
+    ],
+    [
+      "solution_architect",
+      136
+    ],
+    [
+      "product",
+      137
+    ],
+    [
+      "manager",
+      138
+    ],
+    [
+      "technical",
+      139
+    ],
+    [
+      "program",
+      140
+    ],
+    [
+      "trajectory",
+      141
+    ],
+    [
+      "product_manager",
+      142
+    ],
+    [
+      "manager_v",
+      143
+    ],
+    [
+      "v_technical",
+      144
+    ],
+    [
+      "technical_program",
+      145
+    ],
+    [
+      "program_manager",
+      146
+    ],
+    [
+      "manager_career",
+      147
+    ],
+    [
+      "career_trajectory",
+      148
+    ],
+    [
+      "cybersecurity",
+      149
+    ],
+    [
+      "comparison",
+      150
+    ],
+    [
+      "cybersecurity_analyst",
+      151
+    ],
+    [
+      "analyst_versu",
+      152
+    ],
+    [
+      "versu_cloud",
+      153
+    ],
+    [
+      "cloud_engineer",
+      154
+    ],
+    [
+      "engineer_comparison",
+      155
+    ],
+    [
+      "financial",
+      156
+    ],
+    [
+      "invest",
+      157
+    ],
+    [
+      "banker",
+      158
+    ],
+    [
+      "hour",
+      159
+    ],
+    [
+      "financial_analyst",
+      160
+    ],
+    [
+      "v_invest",
+      161
+    ],
+    [
+      "invest_banker",
+      162
+    ],
+    [
+      "banker_compensa",
+      163
+    ],
+    [
+      "compensa_hour",
+      164
+    ],
+    [
+      "ui/ux",
+      165
+    ],
+    [
+      "designer",
+      166
+    ],
+    [
+      "ui/ux_designer",
+      167
+    ],
+    [
+      "designer_versu",
+      168
+    ],
+    [
+      "versu_product",
+      169
+    ],
+    [
+      "product_designer",
+      170
+    ],
+    [
+      "designer_difference",
+      171
+    ],
+    [
+      "requir",
+      172
+    ],
+    [
+      "senior",
+      173
+    ],
+    [
+      "skill_requir",
+      174
+    ],
+    [
+      "requir_senior",
+      175
+    ],
+    [
+      "senior_data",
+      176
+    ],
+    [
+      "ne",
+      177
+    ],
+    [
+      "become",
+      178
+    ],
+    [
+      "ne_know",
+      179
+    ],
+    [
+      "know_become",
+      180
+    ],
+    [
+      "become_machine",
+      181
+    ],
+    [
+      "need",
+      182
+    ],
+    [
+      "skill_need",
+      183
+    ],
+    [
+      "need_full",
+      184
+    ],
+    [
+      "developer_role",
+      185
+    ],
+    [
+      "programm",
+      186
+    ],
+    [
+      "languag",
+      187
+    ],
+    [
+      "programm_languag",
+      188
+    ],
+    [
+      "languag_devop",
+      189
+    ],
+    [
+      "devop_engineer",
+      190
+    ],
+    [
+      "engineer_ne",
+      191
+    ],
+    [
+      "core",
+      192
+    ],
+    [
+      "competency",
+      193
+    ],
+    [
+      "core_competency",
+      194
+    ],
+    [
+      "competency_ai",
+      195
+    ],
+    [
+      "requirement",
+      196
+    ],
+    [
+      "prerequisit",
+      197
+    ],
+    [
+      "requirement_prerequisit",
+      198
+    ],
+    [
+      "prerequisit_solution",
+      199
+    ],
+    [
+      "top",
+      200
+    ],
+    [
+      "company",
+      201
+    ],
+    [
+      "look",
+      202
+    ],
+    [
+      "backend",
+      203
+    ],
+    [
+      "technical_skill",
+      204
+    ],
+    [
+      "skill_top",
+      205
+    ],
+    [
+      "top_tech",
+      206
+    ],
+    [
+      "tech_company",
+      207
+    ],
+    [
+      "company_look",
+      208
+    ],
+    [
+      "look_backend",
+      209
+    ],
+    [
+      "backend_developer",
+      210
+    ],
+    [
+      "list",
+      211
+    ],
+    [
+      "essential",
+      212
+    ],
+    [
+      "tool",
+      213
+    ],
+    [
+      "analytic",
+      214
+    ],
+    [
+      "list_essential",
+      215
+    ],
+    [
+      "essential_tool",
+      216
+    ],
+    [
+      "tool_skill",
+      217
+    ],
+    [
+      "skill_data",
+      218
+    ],
+    [
+      "data_analytic",
+      219
+    ],
+    [
+      "biggest",
+      220
+    ],
+    [
+      "gap",
+      221
+    ],
+    [
+      "biggest_skill",
+      222
+    ],
+    [
+      "skill_gap",
+      223
+    ],
+    [
+      "gap_data",
+      224
+    ],
+    [
+      "miss",
+      225
+    ],
+    [
+      "reach",
+      226
+    ],
+    [
+      "l4",
+      227
+    ],
+    [
+      "skill_miss",
+      228
+    ],
+    [
+      "miss_reach",
+      229
+    ],
+    [
+      "reach_l4",
+      230
+    ],
+    [
+      "l4_senior",
+      231
+    ],
+    [
+      "senior_engineer",
+      232
+    ],
+    [
+      "deficit",
+      233
+    ],
+    [
+      "statistic",
+      234
+    ],
+    [
+      "deficit_machine",
+      235
+    ],
+    [
+      "learn_statistic",
+      236
+    ],
+    [
+      "analyze",
+      237
+    ],
+    [
+      "current",
+      238
+    ],
+    [
+      "market",
+      239
+    ],
+    [
+      "benchmark",
+      240
+    ],
+    [
+      "analyze_skill",
+      241
+    ],
+    [
+      "gap_current",
+      242
+    ],
+    [
+      "current_market",
+      243
+    ],
+    [
+      "market_benchmark",
+      244
+    ],
+    [
+      "lack",
+      245
+    ],
+    [
+      "matrix",
+      246
+    ],
+    [
+      "lack_competency",
+      247
+    ],
+    [
+      "competency_matrix",
+      248
+    ],
+    [
+      "weakness",
+      249
+    ],
+    [
+      "fix",
+      250
+    ],
+    [
+      "first",
+      251
+    ],
+    [
+      "get",
+      252
+    ],
+    [
+      "hir",
+      253
+    ],
+    [
+      "weakness_should",
+      254
+    ],
+    [
+      "should_fix",
+      255
+    ],
+    [
+      "fix_first",
+      256
+    ],
+    [
+      "first_get",
+      257
+    ],
+    [
+      "get_hir",
+      258
+    ],
+    [
+      "show",
+      259
+    ],
+    [
+      "priority",
+      260
+    ],
+    [
+      "bottleneck",
+      261
+    ],
+    [
+      "show_skill",
+      262
+    ],
+    [
+      "skill_deficit",
+      263
+    ],
+    [
+      "deficit_priority",
+      264
+    ],
+    [
+      "priority_bottleneck",
+      265
+    ],
+    [
+      "improve",
+      266
+    ],
+    [
+      "pass",
+      267
+    ],
+    [
+      "interview",
+      268
+    ],
+    [
+      "skill_ne",
+      269
+    ],
+    [
+      "ne_improve",
+      270
+    ],
+    [
+      "improve_pass",
+      271
+    ],
+    [
+      "pass_technical",
+      272
+    ],
+    [
+      "technical_interview",
+      273
+    ],
+    [
+      "generate",
+      274
+    ],
+    [
+      "30",
+      275
+    ],
+    [
+      "day",
+      276
+    ],
+    [
+      "sprint",
+      277
+    ],
+    [
+      "plan",
+      278
+    ],
+    [
+      "close",
+      279
+    ],
+    [
+      "ml",
+      280
+    ],
+    [
+      "generate_30",
+      281
+    ],
+    [
+      "30_day",
+      282
+    ],
+    [
+      "day_sprint",
+      283
+    ],
+    [
+      "sprint_plan",
+      284
+    ],
+    [
+      "plan_close",
+      285
+    ],
+    [
+      "close_ml",
+      286
+    ],
+    [
+      "ml_deficit",
+      287
+    ],
+    [
+      "give",
+      288
+    ],
+    [
+      "month",
+      289
+    ],
+    [
+      "curriculum",
+      290
+    ],
+    [
+      "deep",
+      291
+    ],
+    [
+      "pytorch",
+      292
+    ],
+    [
+      "give_month",
+      293
+    ],
+    [
+      "month_curriculum",
+      294
+    ],
+    [
+      "curriculum_deep",
+      295
+    ],
+    [
+      "deep_learn",
+      296
+    ],
+    [
+      "learn_pytorch",
+      297
+    ],
+    [
+      "create",
+      298
+    ],
+    [
+      "week",
+      299
+    ],
+    [
+      "study",
+      300
+    ],
+    [
+      "schedule",
+      301
+    ],
+    [
+      "create_week",
+      302
+    ],
+    [
+      "week_week",
+      303
+    ],
+    [
+      "week_study",
+      304
+    ],
+    [
+      "study_schedule",
+      305
+    ],
+    [
+      "schedule_machine",
+      306
+    ],
+    [
+      "structure",
+      307
+    ],
+    [
+      "next",
+      308
+    ],
+    [
+      "should_structure",
+      309
+    ],
+    [
+      "structure_learn",
+      310
+    ],
+    [
+      "learn_plan",
+      311
+    ],
+    [
+      "plan_next",
+      312
+    ],
+    [
+      "next_month",
+      313
+    ],
+    [
+      "roadmap",
+      314
+    ],
+    [
+      "sql",
+      315
+    ],
+    [
+      "python",
+      316
+    ],
+    [
+      "fast",
+      317
+    ],
+    [
+      "best_week",
+      318
+    ],
+    [
+      "week_roadmap",
+      319
+    ],
+    [
+      "roadmap_learn",
+      320
+    ],
+    [
+      "learn_sql",
+      321
+    ],
+    [
+      "sql_python",
+      322
+    ],
+    [
+      "python_fast",
+      323
+    ],
+    [
+      "15",
+      324
+    ],
+    [
+      "design",
+      325
+    ],
+    [
+      "15_hour",
+      326
+    ],
+    [
+      "hour_week",
+      327
+    ],
+    [
+      "week_design",
+      328
+    ],
+    [
+      "design_learn",
+      329
+    ],
+    [
+      "build",
+      330
+    ],
+    [
+      "intensive",
+      331
+    ],
+    [
+      "transformer",
+      332
+    ],
+    [
+      "llm",
+      333
+    ],
+    [
+      "build_intensive",
+      334
+    ],
+    [
+      "intensive_study",
+      335
+    ],
+    [
+      "study_sprint",
+      336
+    ],
+    [
+      "sprint_learn",
+      337
+    ],
+    [
+      "learn_transformer",
+      338
+    ],
+    [
+      "transformer_llm",
+      339
+    ],
+    [
+      "advanc",
+      340
+    ],
+    [
+      "hypothesi",
+      341
+    ],
+    [
+      "test",
+      342
+    ],
+    [
+      "learn_advanc",
+      343
+    ],
+    [
+      "advanc_statistic",
+      344
+    ],
+    [
+      "statistic_hypothesi",
+      345
+    ],
+    [
+      "hypothesi_test",
+      346
+    ],
+    [
+      "cours",
+      347
+    ],
+    [
+      "book",
+      348
+    ],
+    [
+      "recommend_best",
+      349
+    ],
+    [
+      "best_cours",
+      350
+    ],
+    [
+      "cours_book",
+      351
+    ],
+    [
+      "book_machine",
+      352
+    ],
+    [
+      "tutorial",
+      353
+    ],
+    [
+      "documenta",
+      354
+    ],
+    [
+      "docker",
+      355
+    ],
+    [
+      "kubernet",
+      356
+    ],
+    [
+      "best_tutorial",
+      357
+    ],
+    [
+      "tutorial_documenta",
+      358
+    ],
+    [
+      "documenta_learn",
+      359
+    ],
+    [
+      "learn_docker",
+      360
+    ],
+    [
+      "docker_kubernet",
+      361
+    ],
+    [
+      "distribut",
+      362
+    ],
+    [
+      "system",
+      363
+    ],
+    [
+      "microservic",
+      364
+    ],
+    [
+      "study_distribut",
+      365
+    ],
+    [
+      "distribut_system",
+      366
+    ],
+    [
+      "system_microservic",
+      367
+    ],
+    [
+      "free",
+      368
+    ],
+    [
+      "resourc",
+      369
+    ],
+    [
+      "interactive",
+      370
+    ],
+    [
+      "lab",
+      371
+    ],
+    [
+      "free_resourc",
+      372
+    ],
+    [
+      "resourc_interactive",
+      373
+    ],
+    [
+      "interactive_lab",
+      374
+    ],
+    [
+      "lab_pytorch",
+      375
+    ],
+    [
+      "youtube",
+      376
+    ],
+    [
+      "channel",
+      377
+    ],
+    [
+      "coursera",
+      378
+    ],
+    [
+      "specialization",
+      379
+    ],
+    [
+      "best_youtube",
+      380
+    ],
+    [
+      "youtube_channel",
+      381
+    ],
+    [
+      "channel_coursera",
+      382
+    ],
+    [
+      "coursera_specialization",
+      383
+    ],
+    [
+      "specialization_data",
+      384
+    ],
+    [
+      "data_science",
+      385
+    ],
+    [
+      "portfolio",
+      386
+    ],
+    [
+      "project",
+      387
+    ],
+    [
+      "showcase",
+      388
+    ],
+    [
+      "recommend_portfolio",
+      389
+    ],
+    [
+      "portfolio_project",
+      390
+    ],
+    [
+      "project_showcase",
+      391
+    ],
+    [
+      "showcase_machine",
+      392
+    ],
+    [
+      "learn_skill",
+      393
+    ],
+    [
+      "capstone",
+      394
+    ],
+    [
+      "capstone_project",
+      395
+    ],
+    [
+      "project_should",
+      396
+    ],
+    [
+      "should_build",
+      397
+    ],
+    [
+      "build_ai",
+      398
+    ],
+    [
+      "engineer_portfolio",
+      399
+    ],
+    [
+      "produc",
+      400
+    ],
+    [
+      "level",
+      401
+    ],
+    [
+      "idea",
+      402
+    ],
+    [
+      "us",
+      403
+    ],
+    [
+      "fastapi",
+      404
+    ],
+    [
+      "give_produc",
+      405
+    ],
+    [
+      "produc_level",
+      406
+    ],
+    [
+      "level_project",
+      407
+    ],
+    [
+      "project_idea",
+      408
+    ],
+    [
+      "idea_us",
+      409
+    ],
+    [
+      "us_fastapi",
+      410
+    ],
+    [
+      "fastapi_pytorch",
+      411
+    ],
+    [
+      "hand",
+      412
+    ],
+    [
+      "impress",
+      413
+    ],
+    [
+      "faang",
+      414
+    ],
+    [
+      "hand_project",
+      415
+    ],
+    [
+      "project_impress",
+      416
+    ],
+    [
+      "impress_hir",
+      417
+    ],
+    [
+      "hir_manager",
+      418
+    ],
+    [
+      "manager_faang",
+      419
+    ],
+    [
+      "react",
+      420
+    ],
+    [
+      "node",
+      421
+    ],
+    [
+      "j",
+      422
+    ],
+    [
+      "stack_project",
+      423
+    ],
+    [
+      "build_us",
+      424
+    ],
+    [
+      "us_react",
+      425
+    ],
+    [
+      "react_node",
+      426
+    ],
+    [
+      "node_j",
+      427
+    ],
+    [
+      "customer",
+      428
+    ],
+    [
+      "churn",
+      429
+    ],
+    [
+      "predictor",
+      430
+    ],
+    [
+      "real",
+      431
+    ],
+    [
+      "time",
+      432
+    ],
+    [
+      "recommenda",
+      433
+    ],
+    [
+      "engine",
+      434
+    ],
+    [
+      "recommend_customer",
+      435
+    ],
+    [
+      "customer_churn",
+      436
+    ],
+    [
+      "churn_predictor",
+      437
+    ],
+    [
+      "predictor_real",
+      438
+    ],
+    [
+      "real_time",
+      439
+    ],
+    [
+      "time_recommenda",
+      440
+    ],
+    [
+      "recommenda_engine",
+      441
+    ],
+    [
+      "engine_project",
+      442
+    ],
+    [
+      "evaluate",
+      443
+    ],
+    [
+      "resume",
+      444
+    ],
+    [
+      "at",
+      445
+    ],
+    [
+      "align",
+      446
+    ],
+    [
+      "evaluate_resume",
+      447
+    ],
+    [
+      "resume_at",
+      448
+    ],
+    [
+      "at_align",
+      449
+    ],
+    [
+      "align_senior",
+      450
+    ],
+    [
+      "senior_l4",
+      451
+    ],
+    [
+      "l4_data",
+      452
+    ],
+    [
+      "review",
+      453
+    ],
+    [
+      "bullet",
+      454
+    ],
+    [
+      "point",
+      455
+    ],
+    [
+      "review_resume",
+      456
+    ],
+    [
+      "resume_bullet",
+      457
+    ],
+    [
+      "bullet_point",
+      458
+    ],
+    [
+      "point_machine",
+      459
+    ],
+    [
+      "optimize",
+      460
+    ],
+    [
+      "cv",
+      461
+    ],
+    [
+      "applicant",
+      462
+    ],
+    [
+      "optimize_cv",
+      463
+    ],
+    [
+      "cv_pass",
+      464
+    ],
+    [
+      "pass_applicant",
+      465
+    ],
+    [
+      "applicant_track",
+      466
+    ],
+    [
+      "track_system",
+      467
+    ],
+    [
+      "keyword",
+      468
+    ],
+    [
+      "at_keyword",
+      469
+    ],
+    [
+      "keyword_miss",
+      470
+    ],
+    [
+      "miss_profile",
+      471
+    ],
+    [
+      "profile_tech",
+      472
+    ],
+    [
+      "rewrite",
+      473
+    ],
+    [
+      "experience",
+      474
+    ],
+    [
+      "google",
+      475
+    ],
+    [
+      "xyz",
+      476
+    ],
+    [
+      "formula",
+      477
+    ],
+    [
+      "rewrite_work",
+      478
+    ],
+    [
+      "work_experience",
+      479
+    ],
+    [
+      "experience_bullet",
+      480
+    ],
+    [
+      "point_us",
+      481
+    ],
+    [
+      "us_google",
+      482
+    ],
+    [
+      "google_xyz",
+      483
+    ],
+    [
+      "xyz_formula",
+      484
+    ],
+    [
+      "audit",
+      485
+    ],
+    [
+      "criteria",
+      486
+    ],
+    [
+      "audit_resume",
+      487
+    ],
+    [
+      "resume_l4",
+      488
+    ],
+    [
+      "l4_software",
+      489
+    ],
+    [
+      "software_engineer",
+      490
+    ],
+    [
+      "engineer_criteria",
+      491
+    ],
+    [
+      "ready",
+      492
+    ],
+    [
+      "app",
+      493
+    ],
+    [
+      "ready_app",
+      494
+    ],
+    [
+      "app_data",
+      495
+    ],
+    [
+      "scientist_job",
+      496
+    ],
+    [
+      "readiness",
+      497
+    ],
+    [
+      "score",
+      498
+    ],
+    [
+      "percentage",
+      499
+    ],
+    [
+      "job_readiness",
+      500
+    ],
+    [
+      "readiness_score",
+      501
+    ],
+    [
+      "score_percentage",
+      502
+    ],
+    [
+      "rol",
+      503
+    ],
+    [
+      "72",
+      504
+    ],
+    [
+      "app_senior",
+      505
+    ],
+    [
+      "l4_rol",
+      506
+    ],
+    [
+      "rol_current",
+      507
+    ],
+    [
+      "current_72",
+      508
+    ],
+    [
+      "72_score",
+      509
+    ],
+    [
+      "close_market",
+      510
+    ],
+    [
+      "market_ready",
+      511
+    ],
+    [
+      "ready_ai",
+      512
+    ],
+    [
+      "overall",
+      513
+    ],
+    [
+      "competitive",
+      514
+    ],
+    [
+      "percentile",
+      515
+    ],
+    [
+      "evaluate_overall",
+      516
+    ],
+    [
+      "overall_career",
+      517
+    ],
+    [
+      "career_readiness",
+      518
+    ],
+    [
+      "readiness_competitive",
+      519
+    ],
+    [
+      "competitive_percentile",
+      520
+    ],
+    [
+      "enough",
+      521
+    ],
+    [
+      "start",
+      522
+    ],
+    [
+      "send",
+      523
+    ],
+    [
+      "application",
+      524
+    ],
+    [
+      "enough_skill",
+      525
+    ],
+    [
+      "skill_start",
+      526
+    ],
+    [
+      "start_send",
+      527
+    ],
+    [
+      "send_job",
+      528
+    ],
+    [
+      "job_application",
+      529
+    ],
+    [
+      "stand",
+      530
+    ],
+    [
+      "stand_learn",
+      531
+    ],
+    [
+      "learn_roadmap",
+      532
+    ],
+    [
+      "much",
+      533
+    ],
+    [
+      "progress",
+      534
+    ],
+    [
+      "made",
+      535
+    ],
+    [
+      "much_progress",
+      536
+    ],
+    [
+      "progress_made",
+      537
+    ],
+    [
+      "made_month",
+      538
+    ],
+    [
+      "velocity",
+      539
+    ],
+    [
+      "logg",
+      540
+    ],
+    [
+      "complet",
+      541
+    ],
+    [
+      "milestone",
+      542
+    ],
+    [
+      "show_velocity",
+      543
+    ],
+    [
+      "velocity_hour",
+      544
+    ],
+    [
+      "hour_logg",
+      545
+    ],
+    [
+      "logg_complet",
+      546
+    ],
+    [
+      "complet_milestone",
+      547
+    ],
+    [
+      "milestone_progress",
+      548
+    ],
+    [
+      "comple",
+      549
+    ],
+    [
+      "verifi",
+      550
+    ],
+    [
+      "badg",
+      551
+    ],
+    [
+      "track_skill",
+      552
+    ],
+    [
+      "skill_comple",
+      553
+    ],
+    [
+      "comple_progress",
+      554
+    ],
+    [
+      "progress_verifi",
+      555
+    ],
+    [
+      "verifi_badg",
+      556
+    ],
+    [
+      "hit",
+      557
+    ],
+    [
+      "november",
+      558
+    ],
+    [
+      "28",
+      559
+    ],
+    [
+      "gate",
+      560
+    ],
+    [
+      "track_hit",
+      561
+    ],
+    [
+      "hit_november",
+      562
+    ],
+    [
+      "november_28",
+      563
+    ],
+    [
+      "28_milestone",
+      564
+    ],
+    [
+      "milestone_gate",
+      565
+    ],
+    [
+      "knowledge",
+      566
+    ],
+    [
+      "question",
+      567
+    ],
+    [
+      "test_knowledge",
+      568
+    ],
+    [
+      "knowledge_python",
+      569
+    ],
+    [
+      "python_sql",
+      570
+    ],
+    [
+      "sql_interview",
+      571
+    ],
+    [
+      "interview_question",
+      572
+    ],
+    [
+      "probability",
+      573
+    ],
+    [
+      "evaluate_skill",
+      574
+    ],
+    [
+      "skill_level",
+      575
+    ],
+    [
+      "level_statistic",
+      576
+    ],
+    [
+      "statistic_probability",
+      577
+    ],
+    [
+      "diagnostic",
+      578
+    ],
+    [
+      "quiz",
+      579
+    ],
+    [
+      "algorithm",
+      580
+    ],
+    [
+      "give_diagnostic",
+      581
+    ],
+    [
+      "diagnostic_quiz",
+      582
+    ],
+    [
+      "quiz_machine",
+      583
+    ],
+    [
+      "learn_algorithm",
+      584
+    ],
+    [
+      "conduct",
+      585
+    ],
+    [
+      "assess",
+      586
+    ],
+    [
+      "gradient",
+      587
+    ],
+    [
+      "descent",
+      588
+    ],
+    [
+      "loss",
+      589
+    ],
+    [
+      "function",
+      590
+    ],
+    [
+      "conduct_technical",
+      591
+    ],
+    [
+      "technical_assess",
+      592
+    ],
+    [
+      "assess_gradient",
+      593
+    ],
+    [
+      "gradient_descent",
+      594
+    ],
+    [
+      "descent_loss",
+      595
+    ],
+    [
+      "loss_function",
+      596
+    ],
+    [
+      "object",
+      597
+    ],
+    [
+      "orient",
+      598
+    ],
+    [
+      "structur",
+      599
+    ],
+    [
+      "test_object",
+      600
+    ],
+    [
+      "object_orient",
+      601
+    ],
+    [
+      "orient_programm",
+      602
+    ],
+    [
+      "programm_data",
+      603
+    ],
+    [
+      "data_structur",
+      604
+    ],
+    [
+      "crack",
+      605
+    ],
+    [
+      "round",
+      606
+    ],
+    [
+      "crack_faang",
+      607
+    ],
+    [
+      "faang_ml",
+      608
+    ],
+    [
+      "ml_system",
+      609
+    ],
+    [
+      "system_design",
+      610
+    ],
+    [
+      "design_round",
+      611
+    ],
+    [
+      "prepare",
+      612
+    ],
+    [
+      "prepare_senior",
+      613
+    ],
+    [
+      "scientist_technical",
+      614
+    ],
+    [
+      "behavioral",
+      615
+    ],
+    [
+      "will",
+      616
+    ],
+    [
+      "ask",
+      617
+    ],
+    [
+      "leadership",
+      618
+    ],
+    [
+      "behavioral_question",
+      619
+    ],
+    [
+      "question_will",
+      620
+    ],
+    [
+      "will_ask",
+      621
+    ],
+    [
+      "ask_leadership",
+      622
+    ],
+    [
+      "leadership_interview",
+      623
+    ],
+    [
+      "equity",
+      624
+    ],
+    [
+      "negotiate",
+      625
+    ],
+    [
+      "target",
+      626
+    ],
+    [
+      "much_salary",
+      627
+    ],
+    [
+      "salary_equity",
+      628
+    ],
+    [
+      "equity_should",
+      629
+    ],
+    [
+      "should_negotiate",
+      630
+    ],
+    [
+      "negotiate_target",
+      631
+    ],
+    [
+      "mock",
+      632
+    ],
+    [
+      "practice",
+      633
+    ],
+    [
+      "two",
+      634
+    ],
+    [
+      "stage",
+      635
+    ],
+    [
+      "candidate",
+      636
+    ],
+    [
+      "retrieval",
+      637
+    ],
+    [
+      "mock_interview",
+      638
+    ],
+    [
+      "interview_practice",
+      639
+    ],
+    [
+      "practice_two",
+      640
+    ],
+    [
+      "two_stage",
+      641
+    ],
+    [
+      "stage_candidate",
+      642
+    ],
+    [
+      "candidate_retrieval",
+      643
+    ],
+    [
+      "retrieval_system",
+      644
+    ],
+    [
+      "negotia",
+      645
+    ],
+    [
+      "tactic",
+      646
+    ],
+    [
+      "total",
+      647
+    ],
+    [
+      "offer",
+      648
+    ],
+    [
+      "salary_negotia",
+      649
+    ],
+    [
+      "negotia_tactic",
+      650
+    ],
+    [
+      "tactic_faang",
+      651
+    ],
+    [
+      "faang_total",
+      652
+    ],
+    [
+      "total_compensa",
+      653
+    ],
+    [
+      "compensa_offer",
+      654
+    ],
+    [
+      "certifica",
+      655
+    ],
+    [
+      "aw",
+      656
+    ],
+    [
+      "gcp",
+      657
+    ],
+    [
+      "cloud_certifica",
+      658
+    ],
+    [
+      "certifica_should",
+      659
+    ],
+    [
+      "should_get",
+      660
+    ],
+    [
+      "get_aw",
+      661
+    ],
+    [
+      "aw_gcp",
+      662
+    ],
+    [
+      "certifi",
+      663
+    ],
+    [
+      "specialty",
+      664
+    ],
+    [
+      "worth",
+      665
+    ],
+    [
+      "aw_certifi",
+      666
+    ],
+    [
+      "certifi_machine",
+      667
+    ],
+    [
+      "learn_specialty",
+      668
+    ],
+    [
+      "specialty_worth",
+      669
+    ],
+    [
+      "certification",
+      670
+    ],
+    [
+      "recogniz",
+      671
+    ],
+    [
+      "certification_recogniz",
+      672
+    ],
+    [
+      "recogniz_devop",
+      673
+    ],
+    [
+      "devop_kubernet",
+      674
+    ],
+    [
+      "validate",
+      675
+    ],
+    [
+      "linkedin",
+      676
+    ],
+    [
+      "best_certification",
+      677
+    ],
+    [
+      "certification_validate",
+      678
+    ],
+    [
+      "validate_data",
+      679
+    ],
+    [
+      "science_skill",
+      680
+    ],
+    [
+      "skill_linkedin",
+      681
+    ],
+    [
+      "cka",
+      682
+    ],
+    [
+      "platform",
+      683
+    ],
+    [
+      "cka_certifica",
+      684
+    ],
+    [
+      "certifica_help",
+      685
+    ],
+    [
+      "help_get",
+      686
+    ],
+    [
+      "get_cloud",
+      687
+    ],
+    [
+      "cloud_platform",
+      688
+    ],
+    [
+      "platform_job",
+      689
+    ],
+    [
+      "ai/ml",
+      690
+    ],
+    [
+      "step",
+      691
+    ],
+    [
+      "become_ai/ml",
+      692
+    ],
+    [
+      "ai/ml_engineer",
+      693
+    ],
+    [
+      "engineer_step",
+      694
+    ],
+    [
+      "step_step",
+      695
+    ],
+    [
+      "pathway",
+      696
+    ],
+    [
+      "step_pathway",
+      697
+    ],
+    [
+      "pathway_become",
+      698
+    ],
+    [
+      "become_solution",
+      699
+    ],
+    [
+      "complete",
+      700
+    ],
+    [
+      "web",
+      701
+    ],
+    [
+      "complete_roadmap",
+      702
+    ],
+    [
+      "roadmap_transi",
+      703
+    ],
+    [
+      "transi_web",
+      704
+    ],
+    [
+      "web_developer",
+      705
+    ],
+    [
+      "developer_data",
+      706
+    ],
+    [
+      "chronological",
+      707
+    ],
+    [
+      "progression",
+      708
+    ],
+    [
+      "chronological_progression",
+      709
+    ],
+    [
+      "progression_cloud",
+      710
+    ],
+    [
+      "cloud_devop",
+      711
+    ],
+    [
+      "staff",
+      712
+    ],
+    [
+      "principal",
+      713
+    ],
+    [
+      "year",
+      714
+    ],
+    [
+      "become_staff",
+      715
+    ],
+    [
+      "staff_engineer",
+      716
+    ],
+    [
+      "engineer_principal",
+      717
+    ],
+    [
+      "principal_architect",
+      718
+    ],
+    [
+      "architect_year",
+      719
+    ],
+    [
+      "should_start",
+      720
+    ],
+    [
+      "start_first",
+      721
+    ],
+    [
+      "should_learn",
+      722
+    ],
+    [
+      "next_step",
+      723
+    ],
+    [
+      "start_deep",
+      724
+    ],
+    [
+      "learn_ne",
+      725
+    ],
+    [
+      "ne_prerequisit",
+      726
+    ],
+    [
+      "complet_statistic",
+      727
+    ],
+    [
+      "statistic_should",
+      728
+    ],
+    [
+      "should_study",
+      729
+    ],
+    [
+      "study_next",
+      730
+    ],
+    [
+      "com",
+      731
+    ],
+    [
+      "sequence",
+      732
+    ],
+    [
+      "com_next",
+      733
+    ],
+    [
+      "next_sequence",
+      734
+    ],
+    [
+      "day_life",
+      735
+    ],
+    [
+      "life_data",
+      736
+    ],
+    [
+      "every",
+      737
+    ],
+    [
+      "engineer_every",
+      738
+    ],
+    [
+      "every_day",
+      739
+    ],
+    [
+      "average",
+      740
+    ],
+    [
+      "demand",
+      741
+    ],
+    [
+      "average_market",
+      742
+    ],
+    [
+      "market_salary",
+      743
+    ],
+    [
+      "salary_demand",
+      744
+    ],
+    [
+      "demand_solution",
+      745
+    ],
+    [
+      "industry",
+      746
+    ],
+    [
+      "outlook",
+      747
+    ],
+    [
+      "decade",
+      748
+    ],
+    [
+      "industry_outlook",
+      749
+    ],
+    [
+      "outlook_cybersecurity",
+      750
+    ],
+    [
+      "cybersecurity_next",
+      751
+    ],
+    [
+      "next_decade",
+      752
+    ],
+    [
+      "explain",
+      753
+    ],
+    [
+      "large",
+      754
+    ],
+    [
+      "language",
+      755
+    ],
+    [
+      "model",
+      756
+    ],
+    [
+      "impact",
+      757
+    ],
+    [
+      "explain_large",
+      758
+    ],
+    [
+      "large_language",
+      759
+    ],
+    [
+      "language_model",
+      760
+    ],
+    [
+      "model_impact",
+      761
+    ],
+    [
+      "impact_software",
+      762
+    ],
+    [
+      "engineer_job",
+      763
+    ]
+  ],
+  "classes": [
+    "CAREER_DISCOVERY",
+    "CAREER_COMPARISON",
+    "SKILL_REQUIREMENT",
+    "SKILL_GAP",
+    "LEARNING_PLAN",
+    "RESOURCE_SEARCH",
+    "PROJECT_RECOMMENDATION",
+    "RESUME_ANALYSIS",
+    "CAREER_READINESS",
+    "PROGRESS_UPDATE",
+    "SKILL_ASSESSMENT",
+    "JOB_PREPARATION",
+    "CERTIFICATION_ADVICE",
+    "CAREER_ROADMAP",
+    "FOLLOW_UP_QUERY",
+    "GENERAL_CAREER_QUESTION"
+  ],
+  "classDocCounts": {
+    "CAREER_DISCOVERY": 10,
+    "CAREER_COMPARISON": 9,
+    "SKILL_REQUIREMENT": 8,
+    "SKILL_GAP": 8,
+    "LEARNING_PLAN": 7,
+    "RESOURCE_SEARCH": 6,
+    "PROJECT_RECOMMENDATION": 6,
+    "RESUME_ANALYSIS": 6,
+    "CAREER_READINESS": 6,
+    "PROGRESS_UPDATE": 5,
+    "SKILL_ASSESSMENT": 5,
+    "JOB_PREPARATION": 6,
+    "CERTIFICATION_ADVICE": 5,
+    "CAREER_ROADMAP": 5,
+    "FOLLOW_UP_QUERY": 6,
+    "GENERAL_CAREER_QUESTION": 5
+  },
+  "classWordCounts": {
+    "CAREER_DISCOVERY": 104,
+    "CAREER_COMPARISON": 113,
+    "SKILL_REQUIREMENT": 80,
+    "SKILL_GAP": 74,
+    "LEARNING_PLAN": 87,
+    "RESOURCE_SEARCH": 60,
+    "PROJECT_RECOMMENDATION": 86,
+    "RESUME_ANALYSIS": 78,
+    "CAREER_READINESS": 60,
+    "PROGRESS_UPDATE": 47,
+    "SKILL_ASSESSMENT": 55,
+    "JOB_PREPARATION": 72,
+    "CERTIFICATION_ADVICE": 55,
+    "CAREER_ROADMAP": 53,
+    "FOLLOW_UP_QUERY": 34,
+    "GENERAL_CAREER_QUESTION": 49
+  },
+  "wordCountsPerClass": {
+    "15": {
+      "LEARNING_PLAN": 2
+    },
+    "28": {
+      "PROGRESS_UPDATE": 2
+    },
+    "30": {
+      "LEARNING_PLAN": 2
+    },
+    "72": {
+      "CAREER_READINESS": 2
+    },
+    "2025": {
+      "CAREER_DISCOVERY": 2
+    },
+    "career": {
+      "CAREER_DISCOVERY": 14,
+      "CAREER_COMPARISON": 2,
+      "CAREER_READINESS": 2
+    },
+    "choose": {
+      "CAREER_DISCOVERY": 2,
+      "CAREER_COMPARISON": 4
+    },
+    "background": {
+      "CAREER_DISCOVERY": 2
+    },
+    "career_choose": {
+      "CAREER_DISCOVERY": 2
+    },
+    "choose_background": {
+      "CAREER_DISCOVERY": 2
+    },
+    "path": {
+      "CAREER_DISCOVERY": 2
+    },
+    "fit": {
+      "CAREER_DISCOVERY": 4
+    },
+    "cod": {
+      "CAREER_DISCOVERY": 2
+    },
+    "math": {
+      "CAREER_DISCOVERY": 2
+    },
+    "profile": {
+      "CAREER_DISCOVERY": 2,
+      "RESUME_ANALYSIS": 2
+    },
+    "career_path": {
+      "CAREER_DISCOVERY": 2
+    },
+    "path_fit": {
+      "CAREER_DISCOVERY": 2
+    },
+    "fit_cod": {
+      "CAREER_DISCOVERY": 2
+    },
+    "cod_math": {
+      "CAREER_DISCOVERY": 2
+    },
+    "math_profile": {
+      "CAREER_DISCOVERY": 2
+    },
+    "recommend": {
+      "CAREER_DISCOVERY": 2,
+      "RESOURCE_SEARCH": 2,
+      "PROJECT_RECOMMENDATION": 4
+    },
+    "high": {
+      "CAREER_DISCOVERY": 4
+    },
+    "pay": {
+      "CAREER_DISCOVERY": 2
+    },
+    "tech": {
+      "CAREER_DISCOVERY": 2,
+      "SKILL_REQUIREMENT": 2,
+      "RESUME_ANALYSIS": 2
+    },
+    "job": {
+      "CAREER_DISCOVERY": 4,
+      "CAREER_READINESS": 6,
+      "CERTIFICATION_ADVICE": 2,
+      "GENERAL_CAREER_QUESTION": 2
+    },
+    "computer": {
+      "CAREER_DISCOVERY": 2
+    },
+    "science": {
+      "CAREER_DISCOVERY": 2,
+      "RESOURCE_SEARCH": 2,
+      "CERTIFICATION_ADVICE": 2
+    },
+    "graduate": {
+      "CAREER_DISCOVERY": 2
+    },
+    "recommend_high": {
+      "CAREER_DISCOVERY": 2
+    },
+    "high_pay": {
+      "CAREER_DISCOVERY": 2
+    },
+    "pay_tech": {
+      "CAREER_DISCOVERY": 2
+    },
+    "tech_job": {
+      "CAREER_DISCOVERY": 2
+    },
+    "job_computer": {
+      "CAREER_DISCOVERY": 2
+    },
+    "computer_science": {
+      "CAREER_DISCOVERY": 2
+    },
+    "science_graduate": {
+      "CAREER_DISCOVERY": 2
+    },
+    "should": {
+      "CAREER_DISCOVERY": 2,
+      "CAREER_COMPARISON": 4,
+      "SKILL_GAP": 2,
+      "LEARNING_PLAN": 2,
+      "PROJECT_RECOMMENDATION": 4,
+      "JOB_PREPARATION": 2,
+      "CERTIFICATION_ADVICE": 2,
+      "FOLLOW_UP_QUERY": 6
+    },
+    "pursue": {
+      "CAREER_DISCOVERY": 2
+    },
+    "like": {
+      "CAREER_DISCOVERY": 2
+    },
+    "data": {
+      "CAREER_DISCOVERY": 4,
+      "CAREER_COMPARISON": 6,
+      "SKILL_REQUIREMENT": 4,
+      "SKILL_GAP": 2,
+      "RESOURCE_SEARCH": 2,
+      "RESUME_ANALYSIS": 2,
+      "CAREER_READINESS": 2,
+      "SKILL_ASSESSMENT": 2,
+      "JOB_PREPARATION": 2,
+      "CERTIFICATION_ADVICE": 2,
+      "CAREER_ROADMAP": 2,
+      "GENERAL_CAREER_QUESTION": 2
+    },
+    "problem": {
+      "CAREER_DISCOVERY": 2
+    },
+    "solv": {
+      "CAREER_DISCOVERY": 2
+    },
+    "career_should": {
+      "CAREER_DISCOVERY": 2
+    },
+    "should_pursue": {
+      "CAREER_DISCOVERY": 2
+    },
+    "pursue_like": {
+      "CAREER_DISCOVERY": 2
+    },
+    "like_data": {
+      "CAREER_DISCOVERY": 2
+    },
+    "data_problem": {
+      "CAREER_DISCOVERY": 2
+    },
+    "problem_solv": {
+      "CAREER_DISCOVERY": 2
+    },
+    "help": {
+      "CAREER_DISCOVERY": 2,
+      "CERTIFICATION_ADVICE": 2
+    },
+    "discover": {
+      "CAREER_DISCOVERY": 4
+    },
+    "artificial": {
+      "CAREER_DISCOVERY": 2
+    },
+    "intelligence": {
+      "CAREER_DISCOVERY": 2
+    },
+    "machine": {
+      "CAREER_DISCOVERY": 2,
+      "CAREER_COMPARISON": 2,
+      "SKILL_REQUIREMENT": 2,
+      "SKILL_GAP": 2,
+      "LEARNING_PLAN": 2,
+      "RESOURCE_SEARCH": 2,
+      "PROJECT_RECOMMENDATION": 2,
+      "RESUME_ANALYSIS": 2,
+      "SKILL_ASSESSMENT": 2,
+      "CERTIFICATION_ADVICE": 2
+    },
+    "learn": {
+      "CAREER_DISCOVERY": 2,
+      "CAREER_COMPARISON": 2,
+      "SKILL_REQUIREMENT": 2,
+      "SKILL_GAP": 2,
+      "LEARNING_PLAN": 12,
+      "RESOURCE_SEARCH": 6,
+      "PROJECT_RECOMMENDATION": 2,
+      "RESUME_ANALYSIS": 2,
+      "PROGRESS_UPDATE": 2,
+      "SKILL_ASSESSMENT": 2,
+      "CERTIFICATION_ADVICE": 2,
+      "FOLLOW_UP_QUERY": 4
+    },
+    "help_discover": {
+      "CAREER_DISCOVERY": 2
+    },
+    "discover_career": {
+      "CAREER_DISCOVERY": 2
+    },
+    "career_artificial": {
+      "CAREER_DISCOVERY": 2
+    },
+    "artificial_intelligence": {
+      "CAREER_DISCOVERY": 2
+    },
+    "intelligence_machine": {
+      "CAREER_DISCOVERY": 2
+    },
+    "machine_learn": {
+      "CAREER_DISCOVERY": 2,
+      "CAREER_COMPARISON": 2,
+      "SKILL_REQUIREMENT": 2,
+      "SKILL_GAP": 2,
+      "LEARNING_PLAN": 2,
+      "RESOURCE_SEARCH": 2,
+      "PROJECT_RECOMMENDATION": 2,
+      "RESUME_ANALYSIS": 2,
+      "SKILL_ASSESSMENT": 2,
+      "CERTIFICATION_ADVICE": 2
+    },
+    "skill": {
+      "CAREER_DISCOVERY": 2,
+      "SKILL_REQUIREMENT": 8,
+      "SKILL_GAP": 10,
+      "PROJECT_RECOMMENDATION": 2,
+      "CAREER_READINESS": 2,
+      "PROGRESS_UPDATE": 2,
+      "SKILL_ASSESSMENT": 2,
+      "CERTIFICATION_ADVICE": 2
+    },
+    "set": {
+      "CAREER_DISCOVERY": 2
+    },
+    "best": {
+      "CAREER_DISCOVERY": 4,
+      "LEARNING_PLAN": 2,
+      "RESOURCE_SEARCH": 6,
+      "CERTIFICATION_ADVICE": 2
+    },
+    "job_fit": {
+      "CAREER_DISCOVERY": 2
+    },
+    "fit_skill": {
+      "CAREER_DISCOVERY": 2
+    },
+    "skill_set": {
+      "CAREER_DISCOVERY": 2
+    },
+    "set_best": {
+      "CAREER_DISCOVERY": 2
+    },
+    "don": {
+      "CAREER_DISCOVERY": 2
+    },
+    "know": {
+      "CAREER_DISCOVERY": 2,
+      "SKILL_REQUIREMENT": 2
+    },
+    "pick": {
+      "CAREER_DISCOVERY": 2
+    },
+    "option": {
+      "CAREER_DISCOVERY": 2
+    },
+    "don_know": {
+      "CAREER_DISCOVERY": 2
+    },
+    "know_career": {
+      "CAREER_DISCOVERY": 2
+    },
+    "career_pick": {
+      "CAREER_DISCOVERY": 2
+    },
+    "pick_option": {
+      "CAREER_DISCOVERY": 2
+    },
+    "growth": {
+      "CAREER_DISCOVERY": 2
+    },
+    "track": {
+      "CAREER_DISCOVERY": 2,
+      "RESUME_ANALYSIS": 2,
+      "PROGRESS_UPDATE": 4
+    },
+    "discover_high": {
+      "CAREER_DISCOVERY": 2
+    },
+    "high_growth": {
+      "CAREER_DISCOVERY": 2
+    },
+    "growth_career": {
+      "CAREER_DISCOVERY": 2
+    },
+    "career_track": {
+      "CAREER_DISCOVERY": 2
+    },
+    "track_2025": {
+      "CAREER_DISCOVERY": 2
+    },
+    "role": {
+      "CAREER_DISCOVERY": 2,
+      "SKILL_REQUIREMENT": 2
+    },
+    "transi": {
+      "CAREER_DISCOVERY": 2,
+      "CAREER_ROADMAP": 2
+    },
+    "analyst": {
+      "CAREER_DISCOVERY": 2,
+      "CAREER_COMPARISON": 6
+    },
+    "role_transi": {
+      "CAREER_DISCOVERY": 2
+    },
+    "transi_data": {
+      "CAREER_DISCOVERY": 2
+    },
+    "data_analyst": {
+      "CAREER_DISCOVERY": 2,
+      "CAREER_COMPARISON": 2
+    },
+    "work": {
+      "CAREER_DISCOVERY": 2,
+      "RESUME_ANALYSIS": 2
+    },
+    "life": {
+      "CAREER_DISCOVERY": 2,
+      "GENERAL_CAREER_QUESTION": 2
+    },
+    "balance": {
+      "CAREER_DISCOVERY": 2
+    },
+    "compensa": {
+      "CAREER_DISCOVERY": 2,
+      "CAREER_COMPARISON": 2,
+      "JOB_PREPARATION": 2
+    },
+    "career_best": {
+      "CAREER_DISCOVERY": 2
+    },
+    "best_work": {
+      "CAREER_DISCOVERY": 2
+    },
+    "work_life": {
+      "CAREER_DISCOVERY": 2
+    },
+    "life_balance": {
+      "CAREER_DISCOVERY": 2
+    },
+    "balance_compensa": {
+      "CAREER_DISCOVERY": 2
+    },
+    "ai": {
+      "CAREER_COMPARISON": 2,
+      "SKILL_REQUIREMENT": 2,
+      "PROJECT_RECOMMENDATION": 2,
+      "CAREER_READINESS": 2,
+      "GENERAL_CAREER_QUESTION": 2
+    },
+    "engineer": {
+      "CAREER_COMPARISON": 8,
+      "SKILL_REQUIREMENT": 6,
+      "SKILL_GAP": 2,
+      "PROJECT_RECOMMENDATION": 2,
+      "RESUME_ANALYSIS": 4,
+      "CAREER_READINESS": 2,
+      "CAREER_ROADMAP": 8,
+      "GENERAL_CAREER_QUESTION": 4
+    },
+    "scientist": {
+      "CAREER_COMPARISON": 2,
+      "SKILL_REQUIREMENT": 2,
+      "SKILL_GAP": 2,
+      "RESUME_ANALYSIS": 2,
+      "CAREER_READINESS": 2,
+      "JOB_PREPARATION": 2,
+      "GENERAL_CAREER_QUESTION": 2
+    },
+    "one": {
+      "CAREER_COMPARISON": 2
+    },
+    "ai_engineer": {
+      "CAREER_COMPARISON": 2,
+      "SKILL_REQUIREMENT": 2,
+      "PROJECT_RECOMMENDATION": 2,
+      "CAREER_READINESS": 2,
+      "GENERAL_CAREER_QUESTION": 2
+    },
+    "engineer_data": {
+      "CAREER_COMPARISON": 2
+    },
+    "data_scientist": {
+      "CAREER_COMPARISON": 2,
+      "SKILL_REQUIREMENT": 2,
+      "SKILL_GAP": 2,
+      "RESUME_ANALYSIS": 2,
+      "CAREER_READINESS": 2,
+      "JOB_PREPARATION": 2,
+      "GENERAL_CAREER_QUESTION": 2
+    },
+    "scientist_one": {
+      "CAREER_COMPARISON": 2
+    },
+    "one_should": {
+      "CAREER_COMPARISON": 2
+    },
+    "should_choose": {
+      "CAREER_COMPARISON": 4
+    },
+    "difference": {
+      "CAREER_COMPARISON": 4
+    },
+    "v": {
+      "CAREER_COMPARISON": 8
+    },
+    "difference_data": {
+      "CAREER_COMPARISON": 2
+    },
+    "analyst_v": {
+      "CAREER_COMPARISON": 4
+    },
+    "v_data": {
+      "CAREER_COMPARISON": 2
+    },
+    "data_engineer": {
+      "CAREER_COMPARISON": 2,
+      "CAREER_ROADMAP": 2
+    },
+    "compare": {
+      "CAREER_COMPARISON": 2
+    },
+    "versu": {
+      "CAREER_COMPARISON": 6
+    },
+    "software": {
+      "CAREER_COMPARISON": 2,
+      "RESUME_ANALYSIS": 2,
+      "GENERAL_CAREER_QUESTION": 2
+    },
+    "developer": {
+      "CAREER_COMPARISON": 6,
+      "SKILL_REQUIREMENT": 4,
+      "CAREER_ROADMAP": 2
+    },
+    "compare_machine": {
+      "CAREER_COMPARISON": 2
+    },
+    "learn_engineer": {
+      "CAREER_COMPARISON": 2,
+      "SKILL_REQUIREMENT": 2,
+      "RESUME_ANALYSIS": 2
+    },
+    "engineer_versu": {
+      "CAREER_COMPARISON": 2
+    },
+    "versu_software": {
+      "CAREER_COMPARISON": 2
+    },
+    "software_developer": {
+      "CAREER_COMPARISON": 2
+    },
+    "frontend": {
+      "CAREER_COMPARISON": 2
+    },
+    "full": {
+      "CAREER_COMPARISON": 2,
+      "SKILL_REQUIREMENT": 2,
+      "PROJECT_RECOMMENDATION": 2
+    },
+    "stack": {
+      "CAREER_COMPARISON": 2,
+      "SKILL_REQUIREMENT": 2,
+      "PROJECT_RECOMMENDATION": 2
+    },
+    "salary": {
+      "CAREER_COMPARISON": 2,
+      "JOB_PREPARATION": 4,
+      "GENERAL_CAREER_QUESTION": 2
+    },
+    "difficulty": {
+      "CAREER_COMPARISON": 2
+    },
+    "frontend_developer": {
+      "CAREER_COMPARISON": 2
+    },
+    "developer_v": {
+      "CAREER_COMPARISON": 2
+    },
+    "v_full": {
+      "CAREER_COMPARISON": 2
+    },
+    "full_stack": {
+      "CAREER_COMPARISON": 2,
+      "SKILL_REQUIREMENT": 2,
+      "PROJECT_RECOMMENDATION": 2
+    },
+    "stack_developer": {
+      "CAREER_COMPARISON": 2,
+      "SKILL_REQUIREMENT": 2
+    },
+    "developer_salary": {
+      "CAREER_COMPARISON": 2
+    },
+    "salary_difficulty": {
+      "CAREER_COMPARISON": 2
+    },
+    "devop": {
+      "CAREER_COMPARISON": 2,
+      "SKILL_REQUIREMENT": 2,
+      "CERTIFICATION_ADVICE": 2,
+      "CAREER_ROADMAP": 2
+    },
+    "cloud": {
+      "CAREER_COMPARISON": 4,
+      "CERTIFICATION_ADVICE": 4,
+      "CAREER_ROADMAP": 2
+    },
+    "solution": {
+      "CAREER_COMPARISON": 2,
+      "SKILL_REQUIREMENT": 2,
+      "CAREER_ROADMAP": 2,
+      "GENERAL_CAREER_QUESTION": 2
+    },
+    "architect": {
+      "CAREER_COMPARISON": 2,
+      "SKILL_REQUIREMENT": 2,
+      "CAREER_ROADMAP": 4,
+      "GENERAL_CAREER_QUESTION": 2
+    },
+    "choose_devop": {
+      "CAREER_COMPARISON": 2
+    },
+    "devop_cloud": {
+      "CAREER_COMPARISON": 2
+    },
+    "cloud_solution": {
+      "CAREER_COMPARISON": 2
+    },
+    "solution_architect": {
+      "CAREER_COMPARISON": 2,
+      "SKILL_REQUIREMENT": 2,
+      "CAREER_ROADMAP": 2,
+      "GENERAL_CAREER_QUESTION": 2
+    },
+    "product": {
+      "CAREER_COMPARISON": 4
+    },
+    "manager": {
+      "CAREER_COMPARISON": 4,
+      "PROJECT_RECOMMENDATION": 2
+    },
+    "technical": {
+      "CAREER_COMPARISON": 2,
+      "SKILL_REQUIREMENT": 2,
+      "SKILL_GAP": 2,
+      "SKILL_ASSESSMENT": 2,
+      "JOB_PREPARATION": 2
+    },
+    "program": {
+      "CAREER_COMPARISON": 2
+    },
+    "trajectory": {
+      "CAREER_COMPARISON": 2
+    },
+    "product_manager": {
+      "CAREER_COMPARISON": 2
+    },
+    "manager_v": {
+      "CAREER_COMPARISON": 2
+    },
+    "v_technical": {
+      "CAREER_COMPARISON": 2
+    },
+    "technical_program": {
+      "CAREER_COMPARISON": 2
+    },
+    "program_manager": {
+      "CAREER_COMPARISON": 2
+    },
+    "manager_career": {
+      "CAREER_COMPARISON": 2
+    },
+    "career_trajectory": {
+      "CAREER_COMPARISON": 2
+    },
+    "cybersecurity": {
+      "CAREER_COMPARISON": 2,
+      "GENERAL_CAREER_QUESTION": 2
+    },
+    "comparison": {
+      "CAREER_COMPARISON": 2
+    },
+    "cybersecurity_analyst": {
+      "CAREER_COMPARISON": 2
+    },
+    "analyst_versu": {
+      "CAREER_COMPARISON": 2
+    },
+    "versu_cloud": {
+      "CAREER_COMPARISON": 2
+    },
+    "cloud_engineer": {
+      "CAREER_COMPARISON": 2
+    },
+    "engineer_comparison": {
+      "CAREER_COMPARISON": 2
+    },
+    "financial": {
+      "CAREER_COMPARISON": 2
+    },
+    "invest": {
+      "CAREER_COMPARISON": 2
+    },
+    "banker": {
+      "CAREER_COMPARISON": 2
+    },
+    "hour": {
+      "CAREER_COMPARISON": 2,
+      "LEARNING_PLAN": 2,
+      "PROGRESS_UPDATE": 2
+    },
+    "financial_analyst": {
+      "CAREER_COMPARISON": 2
+    },
+    "v_invest": {
+      "CAREER_COMPARISON": 2
+    },
+    "invest_banker": {
+      "CAREER_COMPARISON": 2
+    },
+    "banker_compensa": {
+      "CAREER_COMPARISON": 2
+    },
+    "compensa_hour": {
+      "CAREER_COMPARISON": 2
+    },
+    "ui/ux": {
+      "CAREER_COMPARISON": 2
+    },
+    "designer": {
+      "CAREER_COMPARISON": 4
+    },
+    "ui/ux_designer": {
+      "CAREER_COMPARISON": 2
+    },
+    "designer_versu": {
+      "CAREER_COMPARISON": 2
+    },
+    "versu_product": {
+      "CAREER_COMPARISON": 2
+    },
+    "product_designer": {
+      "CAREER_COMPARISON": 2
+    },
+    "designer_difference": {
+      "CAREER_COMPARISON": 2
+    },
+    "requir": {
+      "SKILL_REQUIREMENT": 2
+    },
+    "senior": {
+      "SKILL_REQUIREMENT": 2,
+      "SKILL_GAP": 2,
+      "RESUME_ANALYSIS": 2,
+      "CAREER_READINESS": 2,
+      "JOB_PREPARATION": 2
+    },
+    "skill_requir": {
+      "SKILL_REQUIREMENT": 2
+    },
+    "requir_senior": {
+      "SKILL_REQUIREMENT": 2
+    },
+    "senior_data": {
+      "SKILL_REQUIREMENT": 2,
+      "JOB_PREPARATION": 2
+    },
+    "ne": {
+      "SKILL_REQUIREMENT": 4,
+      "SKILL_GAP": 2,
+      "FOLLOW_UP_QUERY": 2
+    },
+    "become": {
+      "SKILL_REQUIREMENT": 2,
+      "CAREER_ROADMAP": 6
+    },
+    "ne_know": {
+      "SKILL_REQUIREMENT": 2
+    },
+    "know_become": {
+      "SKILL_REQUIREMENT": 2
+    },
+    "become_machine": {
+      "SKILL_REQUIREMENT": 2
+    },
+    "need": {
+      "SKILL_REQUIREMENT": 2
+    },
+    "skill_need": {
+      "SKILL_REQUIREMENT": 2
+    },
+    "need_full": {
+      "SKILL_REQUIREMENT": 2
+    },
+    "developer_role": {
+      "SKILL_REQUIREMENT": 2
+    },
+    "programm": {
+      "SKILL_REQUIREMENT": 2,
+      "SKILL_ASSESSMENT": 2
+    },
+    "languag": {
+      "SKILL_REQUIREMENT": 2
+    },
+    "programm_languag": {
+      "SKILL_REQUIREMENT": 2
+    },
+    "languag_devop": {
+      "SKILL_REQUIREMENT": 2
+    },
+    "devop_engineer": {
+      "SKILL_REQUIREMENT": 2,
+      "CAREER_ROADMAP": 2
+    },
+    "engineer_ne": {
+      "SKILL_REQUIREMENT": 2
+    },
+    "core": {
+      "SKILL_REQUIREMENT": 2
+    },
+    "competency": {
+      "SKILL_REQUIREMENT": 2,
+      "SKILL_GAP": 2
+    },
+    "core_competency": {
+      "SKILL_REQUIREMENT": 2
+    },
+    "competency_ai": {
+      "SKILL_REQUIREMENT": 2
+    },
+    "requirement": {
+      "SKILL_REQUIREMENT": 2
+    },
+    "prerequisit": {
+      "SKILL_REQUIREMENT": 2,
+      "FOLLOW_UP_QUERY": 2
+    },
+    "requirement_prerequisit": {
+      "SKILL_REQUIREMENT": 2
+    },
+    "prerequisit_solution": {
+      "SKILL_REQUIREMENT": 2
+    },
+    "top": {
+      "SKILL_REQUIREMENT": 2
+    },
+    "company": {
+      "SKILL_REQUIREMENT": 2,
+      "RESUME_ANALYSIS": 2
+    },
+    "look": {
+      "SKILL_REQUIREMENT": 2
+    },
+    "backend": {
+      "SKILL_REQUIREMENT": 2
+    },
+    "technical_skill": {
+      "SKILL_REQUIREMENT": 2
+    },
+    "skill_top": {
+      "SKILL_REQUIREMENT": 2
+    },
+    "top_tech": {
+      "SKILL_REQUIREMENT": 2
+    },
+    "tech_company": {
+      "SKILL_REQUIREMENT": 2,
+      "RESUME_ANALYSIS": 2
+    },
+    "company_look": {
+      "SKILL_REQUIREMENT": 2
+    },
+    "look_backend": {
+      "SKILL_REQUIREMENT": 2
+    },
+    "backend_developer": {
+      "SKILL_REQUIREMENT": 2
+    },
+    "list": {
+      "SKILL_REQUIREMENT": 2
+    },
+    "essential": {
+      "SKILL_REQUIREMENT": 2
+    },
+    "tool": {
+      "SKILL_REQUIREMENT": 2
+    },
+    "analytic": {
+      "SKILL_REQUIREMENT": 2
+    },
+    "list_essential": {
+      "SKILL_REQUIREMENT": 2
+    },
+    "essential_tool": {
+      "SKILL_REQUIREMENT": 2
+    },
+    "tool_skill": {
+      "SKILL_REQUIREMENT": 2
+    },
+    "skill_data": {
+      "SKILL_REQUIREMENT": 2
+    },
+    "data_analytic": {
+      "SKILL_REQUIREMENT": 2
+    },
+    "biggest": {
+      "SKILL_GAP": 2
+    },
+    "gap": {
+      "SKILL_GAP": 4
+    },
+    "biggest_skill": {
+      "SKILL_GAP": 2
+    },
+    "skill_gap": {
+      "SKILL_GAP": 4
+    },
+    "gap_data": {
+      "SKILL_GAP": 2
+    },
+    "miss": {
+      "SKILL_GAP": 2,
+      "RESUME_ANALYSIS": 2
+    },
+    "reach": {
+      "SKILL_GAP": 2
+    },
+    "l4": {
+      "SKILL_GAP": 2,
+      "RESUME_ANALYSIS": 4,
+      "CAREER_READINESS": 2
+    },
+    "skill_miss": {
+      "SKILL_GAP": 2
+    },
+    "miss_reach": {
+      "SKILL_GAP": 2
+    },
+    "reach_l4": {
+      "SKILL_GAP": 2
+    },
+    "l4_senior": {
+      "SKILL_GAP": 2
+    },
+    "senior_engineer": {
+      "SKILL_GAP": 2
+    },
+    "deficit": {
+      "SKILL_GAP": 4,
+      "LEARNING_PLAN": 2
+    },
+    "statistic": {
+      "SKILL_GAP": 2,
+      "RESOURCE_SEARCH": 2,
+      "SKILL_ASSESSMENT": 2,
+      "FOLLOW_UP_QUERY": 2
+    },
+    "deficit_machine": {
+      "SKILL_GAP": 2
+    },
+    "learn_statistic": {
+      "SKILL_GAP": 2
+    },
+    "analyze": {
+      "SKILL_GAP": 2
+    },
+    "current": {
+      "SKILL_GAP": 2,
+      "CAREER_READINESS": 2
+    },
+    "market": {
+      "SKILL_GAP": 2,
+      "CAREER_READINESS": 2,
+      "GENERAL_CAREER_QUESTION": 2
+    },
+    "benchmark": {
+      "SKILL_GAP": 2
+    },
+    "analyze_skill": {
+      "SKILL_GAP": 2
+    },
+    "gap_current": {
+      "SKILL_GAP": 2
+    },
+    "current_market": {
+      "SKILL_GAP": 2
+    },
+    "market_benchmark": {
+      "SKILL_GAP": 2
+    },
+    "lack": {
+      "SKILL_GAP": 2
+    },
+    "matrix": {
+      "SKILL_GAP": 2
+    },
+    "lack_competency": {
+      "SKILL_GAP": 2
+    },
+    "competency_matrix": {
+      "SKILL_GAP": 2
+    },
+    "weakness": {
+      "SKILL_GAP": 2
+    },
+    "fix": {
+      "SKILL_GAP": 2
+    },
+    "first": {
+      "SKILL_GAP": 2,
+      "FOLLOW_UP_QUERY": 2
+    },
+    "get": {
+      "SKILL_GAP": 2,
+      "CERTIFICATION_ADVICE": 4
+    },
+    "hir": {
+      "SKILL_GAP": 2,
+      "PROJECT_RECOMMENDATION": 2
+    },
+    "weakness_should": {
+      "SKILL_GAP": 2
+    },
+    "should_fix": {
+      "SKILL_GAP": 2
+    },
+    "fix_first": {
+      "SKILL_GAP": 2
+    },
+    "first_get": {
+      "SKILL_GAP": 2
+    },
+    "get_hir": {
+      "SKILL_GAP": 2
+    },
+    "show": {
+      "SKILL_GAP": 2,
+      "PROGRESS_UPDATE": 2
+    },
+    "priority": {
+      "SKILL_GAP": 2
+    },
+    "bottleneck": {
+      "SKILL_GAP": 2
+    },
+    "show_skill": {
+      "SKILL_GAP": 2
+    },
+    "skill_deficit": {
+      "SKILL_GAP": 2
+    },
+    "deficit_priority": {
+      "SKILL_GAP": 2
+    },
+    "priority_bottleneck": {
+      "SKILL_GAP": 2
+    },
+    "improve": {
+      "SKILL_GAP": 2
+    },
+    "pass": {
+      "SKILL_GAP": 2,
+      "RESUME_ANALYSIS": 2
+    },
+    "interview": {
+      "SKILL_GAP": 2,
+      "SKILL_ASSESSMENT": 2,
+      "JOB_PREPARATION": 6
+    },
+    "skill_ne": {
+      "SKILL_GAP": 2
+    },
+    "ne_improve": {
+      "SKILL_GAP": 2
+    },
+    "improve_pass": {
+      "SKILL_GAP": 2
+    },
+    "pass_technical": {
+      "SKILL_GAP": 2
+    },
+    "technical_interview": {
+      "SKILL_GAP": 2,
+      "JOB_PREPARATION": 2
+    },
+    "generate": {
+      "LEARNING_PLAN": 2
+    },
+    "day": {
+      "LEARNING_PLAN": 2,
+      "GENERAL_CAREER_QUESTION": 4
+    },
+    "sprint": {
+      "LEARNING_PLAN": 4
+    },
+    "plan": {
+      "LEARNING_PLAN": 6
+    },
+    "close": {
+      "LEARNING_PLAN": 2,
+      "CAREER_READINESS": 2
+    },
+    "ml": {
+      "LEARNING_PLAN": 2,
+      "JOB_PREPARATION": 2
+    },
+    "generate_30": {
+      "LEARNING_PLAN": 2
+    },
+    "30_day": {
+      "LEARNING_PLAN": 2
+    },
+    "day_sprint": {
+      "LEARNING_PLAN": 2
+    },
+    "sprint_plan": {
+      "LEARNING_PLAN": 2
+    },
+    "plan_close": {
+      "LEARNING_PLAN": 2
+    },
+    "close_ml": {
+      "LEARNING_PLAN": 2
+    },
+    "ml_deficit": {
+      "LEARNING_PLAN": 2
+    },
+    "give": {
+      "LEARNING_PLAN": 2,
+      "PROJECT_RECOMMENDATION": 2,
+      "SKILL_ASSESSMENT": 2
+    },
+    "month": {
+      "LEARNING_PLAN": 4,
+      "PROGRESS_UPDATE": 2
+    },
+    "curriculum": {
+      "LEARNING_PLAN": 2
+    },
+    "deep": {
+      "LEARNING_PLAN": 2,
+      "FOLLOW_UP_QUERY": 2
+    },
+    "pytorch": {
+      "LEARNING_PLAN": 2,
+      "RESOURCE_SEARCH": 2,
+      "PROJECT_RECOMMENDATION": 2
+    },
+    "give_month": {
+      "LEARNING_PLAN": 2
+    },
+    "month_curriculum": {
+      "LEARNING_PLAN": 2
+    },
+    "curriculum_deep": {
+      "LEARNING_PLAN": 2
+    },
+    "deep_learn": {
+      "LEARNING_PLAN": 2,
+      "FOLLOW_UP_QUERY": 2
+    },
+    "learn_pytorch": {
+      "LEARNING_PLAN": 2
+    },
+    "create": {
+      "LEARNING_PLAN": 2
+    },
+    "week": {
+      "LEARNING_PLAN": 8
+    },
+    "study": {
+      "LEARNING_PLAN": 4,
+      "RESOURCE_SEARCH": 2,
+      "FOLLOW_UP_QUERY": 2
+    },
+    "schedule": {
+      "LEARNING_PLAN": 2
+    },
+    "create_week": {
+      "LEARNING_PLAN": 2
+    },
+    "week_week": {
+      "LEARNING_PLAN": 2
+    },
+    "week_study": {
+      "LEARNING_PLAN": 2
+    },
+    "study_schedule": {
+      "LEARNING_PLAN": 2
+    },
+    "schedule_machine": {
+      "LEARNING_PLAN": 2
+    },
+    "structure": {
+      "LEARNING_PLAN": 2
+    },
+    "next": {
+      "LEARNING_PLAN": 2,
+      "FOLLOW_UP_QUERY": 6,
+      "GENERAL_CAREER_QUESTION": 2
+    },
+    "should_structure": {
+      "LEARNING_PLAN": 2
+    },
+    "structure_learn": {
+      "LEARNING_PLAN": 2
+    },
+    "learn_plan": {
+      "LEARNING_PLAN": 4
+    },
+    "plan_next": {
+      "LEARNING_PLAN": 2
+    },
+    "next_month": {
+      "LEARNING_PLAN": 2
+    },
+    "roadmap": {
+      "LEARNING_PLAN": 2,
+      "PROGRESS_UPDATE": 2,
+      "CAREER_ROADMAP": 2
+    },
+    "sql": {
+      "LEARNING_PLAN": 2,
+      "SKILL_ASSESSMENT": 2
+    },
+    "python": {
+      "LEARNING_PLAN": 2,
+      "SKILL_ASSESSMENT": 2
+    },
+    "fast": {
+      "LEARNING_PLAN": 2
+    },
+    "best_week": {
+      "LEARNING_PLAN": 2
+    },
+    "week_roadmap": {
+      "LEARNING_PLAN": 2
+    },
+    "roadmap_learn": {
+      "LEARNING_PLAN": 2
+    },
+    "learn_sql": {
+      "LEARNING_PLAN": 2
+    },
+    "sql_python": {
+      "LEARNING_PLAN": 2
+    },
+    "python_fast": {
+      "LEARNING_PLAN": 2
+    },
+    "design": {
+      "LEARNING_PLAN": 2,
+      "JOB_PREPARATION": 2
+    },
+    "15_hour": {
+      "LEARNING_PLAN": 2
+    },
+    "hour_week": {
+      "LEARNING_PLAN": 2
+    },
+    "week_design": {
+      "LEARNING_PLAN": 2
+    },
+    "design_learn": {
+      "LEARNING_PLAN": 2
+    },
+    "build": {
+      "LEARNING_PLAN": 2,
+      "PROJECT_RECOMMENDATION": 4
+    },
+    "intensive": {
+      "LEARNING_PLAN": 2
+    },
+    "transformer": {
+      "LEARNING_PLAN": 2
+    },
+    "llm": {
+      "LEARNING_PLAN": 2
+    },
+    "build_intensive": {
+      "LEARNING_PLAN": 2
+    },
+    "intensive_study": {
+      "LEARNING_PLAN": 2
+    },
+    "study_sprint": {
+      "LEARNING_PLAN": 2
+    },
+    "sprint_learn": {
+      "LEARNING_PLAN": 2
+    },
+    "learn_transformer": {
+      "LEARNING_PLAN": 2
+    },
+    "transformer_llm": {
+      "LEARNING_PLAN": 2
+    },
+    "advanc": {
+      "RESOURCE_SEARCH": 2
+    },
+    "hypothesi": {
+      "RESOURCE_SEARCH": 2
+    },
+    "test": {
+      "RESOURCE_SEARCH": 2,
+      "SKILL_ASSESSMENT": 4
+    },
+    "learn_advanc": {
+      "RESOURCE_SEARCH": 2
+    },
+    "advanc_statistic": {
+      "RESOURCE_SEARCH": 2
+    },
+    "statistic_hypothesi": {
+      "RESOURCE_SEARCH": 2
+    },
+    "hypothesi_test": {
+      "RESOURCE_SEARCH": 2
+    },
+    "cours": {
+      "RESOURCE_SEARCH": 2
+    },
+    "book": {
+      "RESOURCE_SEARCH": 2
+    },
+    "recommend_best": {
+      "RESOURCE_SEARCH": 2
+    },
+    "best_cours": {
+      "RESOURCE_SEARCH": 2
+    },
+    "cours_book": {
+      "RESOURCE_SEARCH": 2
+    },
+    "book_machine": {
+      "RESOURCE_SEARCH": 2
+    },
+    "tutorial": {
+      "RESOURCE_SEARCH": 2
+    },
+    "documenta": {
+      "RESOURCE_SEARCH": 2
+    },
+    "docker": {
+      "RESOURCE_SEARCH": 2
+    },
+    "kubernet": {
+      "RESOURCE_SEARCH": 2,
+      "CERTIFICATION_ADVICE": 2
+    },
+    "best_tutorial": {
+      "RESOURCE_SEARCH": 2
+    },
+    "tutorial_documenta": {
+      "RESOURCE_SEARCH": 2
+    },
+    "documenta_learn": {
+      "RESOURCE_SEARCH": 2
+    },
+    "learn_docker": {
+      "RESOURCE_SEARCH": 2
+    },
+    "docker_kubernet": {
+      "RESOURCE_SEARCH": 2
+    },
+    "distribut": {
+      "RESOURCE_SEARCH": 2
+    },
+    "system": {
+      "RESOURCE_SEARCH": 2,
+      "RESUME_ANALYSIS": 2,
+      "JOB_PREPARATION": 4
+    },
+    "microservic": {
+      "RESOURCE_SEARCH": 2
+    },
+    "study_distribut": {
+      "RESOURCE_SEARCH": 2
+    },
+    "distribut_system": {
+      "RESOURCE_SEARCH": 2
+    },
+    "system_microservic": {
+      "RESOURCE_SEARCH": 2
+    },
+    "free": {
+      "RESOURCE_SEARCH": 2
+    },
+    "resourc": {
+      "RESOURCE_SEARCH": 2
+    },
+    "interactive": {
+      "RESOURCE_SEARCH": 2
+    },
+    "lab": {
+      "RESOURCE_SEARCH": 2
+    },
+    "free_resourc": {
+      "RESOURCE_SEARCH": 2
+    },
+    "resourc_interactive": {
+      "RESOURCE_SEARCH": 2
+    },
+    "interactive_lab": {
+      "RESOURCE_SEARCH": 2
+    },
+    "lab_pytorch": {
+      "RESOURCE_SEARCH": 2
+    },
+    "youtube": {
+      "RESOURCE_SEARCH": 2
+    },
+    "channel": {
+      "RESOURCE_SEARCH": 2
+    },
+    "coursera": {
+      "RESOURCE_SEARCH": 2
+    },
+    "specialization": {
+      "RESOURCE_SEARCH": 2
+    },
+    "best_youtube": {
+      "RESOURCE_SEARCH": 2
+    },
+    "youtube_channel": {
+      "RESOURCE_SEARCH": 2
+    },
+    "channel_coursera": {
+      "RESOURCE_SEARCH": 2
+    },
+    "coursera_specialization": {
+      "RESOURCE_SEARCH": 2
+    },
+    "specialization_data": {
+      "RESOURCE_SEARCH": 2
+    },
+    "data_science": {
+      "RESOURCE_SEARCH": 2,
+      "CERTIFICATION_ADVICE": 2
+    },
+    "portfolio": {
+      "PROJECT_RECOMMENDATION": 4
+    },
+    "project": {
+      "PROJECT_RECOMMENDATION": 12
+    },
+    "showcase": {
+      "PROJECT_RECOMMENDATION": 2
+    },
+    "recommend_portfolio": {
+      "PROJECT_RECOMMENDATION": 2
+    },
+    "portfolio_project": {
+      "PROJECT_RECOMMENDATION": 2
+    },
+    "project_showcase": {
+      "PROJECT_RECOMMENDATION": 2
+    },
+    "showcase_machine": {
+      "PROJECT_RECOMMENDATION": 2
+    },
+    "learn_skill": {
+      "PROJECT_RECOMMENDATION": 2
+    },
+    "capstone": {
+      "PROJECT_RECOMMENDATION": 2
+    },
+    "capstone_project": {
+      "PROJECT_RECOMMENDATION": 2
+    },
+    "project_should": {
+      "PROJECT_RECOMMENDATION": 4
+    },
+    "should_build": {
+      "PROJECT_RECOMMENDATION": 4
+    },
+    "build_ai": {
+      "PROJECT_RECOMMENDATION": 2
+    },
+    "engineer_portfolio": {
+      "PROJECT_RECOMMENDATION": 2
+    },
+    "produc": {
+      "PROJECT_RECOMMENDATION": 2
+    },
+    "level": {
+      "PROJECT_RECOMMENDATION": 2,
+      "SKILL_ASSESSMENT": 2
+    },
+    "idea": {
+      "PROJECT_RECOMMENDATION": 2
+    },
+    "us": {
+      "PROJECT_RECOMMENDATION": 4,
+      "RESUME_ANALYSIS": 2
+    },
+    "fastapi": {
+      "PROJECT_RECOMMENDATION": 2
+    },
+    "give_produc": {
+      "PROJECT_RECOMMENDATION": 2
+    },
+    "produc_level": {
+      "PROJECT_RECOMMENDATION": 2
+    },
+    "level_project": {
+      "PROJECT_RECOMMENDATION": 2
+    },
+    "project_idea": {
+      "PROJECT_RECOMMENDATION": 2
+    },
+    "idea_us": {
+      "PROJECT_RECOMMENDATION": 2
+    },
+    "us_fastapi": {
+      "PROJECT_RECOMMENDATION": 2
+    },
+    "fastapi_pytorch": {
+      "PROJECT_RECOMMENDATION": 2
+    },
+    "hand": {
+      "PROJECT_RECOMMENDATION": 2
+    },
+    "impress": {
+      "PROJECT_RECOMMENDATION": 2
+    },
+    "faang": {
+      "PROJECT_RECOMMENDATION": 2,
+      "JOB_PREPARATION": 4
+    },
+    "hand_project": {
+      "PROJECT_RECOMMENDATION": 2
+    },
+    "project_impress": {
+      "PROJECT_RECOMMENDATION": 2
+    },
+    "impress_hir": {
+      "PROJECT_RECOMMENDATION": 2
+    },
+    "hir_manager": {
+      "PROJECT_RECOMMENDATION": 2
+    },
+    "manager_faang": {
+      "PROJECT_RECOMMENDATION": 2
+    },
+    "react": {
+      "PROJECT_RECOMMENDATION": 2
+    },
+    "node": {
+      "PROJECT_RECOMMENDATION": 2
+    },
+    "j": {
+      "PROJECT_RECOMMENDATION": 2
+    },
+    "stack_project": {
+      "PROJECT_RECOMMENDATION": 2
+    },
+    "build_us": {
+      "PROJECT_RECOMMENDATION": 2
+    },
+    "us_react": {
+      "PROJECT_RECOMMENDATION": 2
+    },
+    "react_node": {
+      "PROJECT_RECOMMENDATION": 2
+    },
+    "node_j": {
+      "PROJECT_RECOMMENDATION": 2
+    },
+    "customer": {
+      "PROJECT_RECOMMENDATION": 2
+    },
+    "churn": {
+      "PROJECT_RECOMMENDATION": 2
+    },
+    "predictor": {
+      "PROJECT_RECOMMENDATION": 2
+    },
+    "real": {
+      "PROJECT_RECOMMENDATION": 2
+    },
+    "time": {
+      "PROJECT_RECOMMENDATION": 2
+    },
+    "recommenda": {
+      "PROJECT_RECOMMENDATION": 2
+    },
+    "engine": {
+      "PROJECT_RECOMMENDATION": 2
+    },
+    "recommend_customer": {
+      "PROJECT_RECOMMENDATION": 2
+    },
+    "customer_churn": {
+      "PROJECT_RECOMMENDATION": 2
+    },
+    "churn_predictor": {
+      "PROJECT_RECOMMENDATION": 2
+    },
+    "predictor_real": {
+      "PROJECT_RECOMMENDATION": 2
+    },
+    "real_time": {
+      "PROJECT_RECOMMENDATION": 2
+    },
+    "time_recommenda": {
+      "PROJECT_RECOMMENDATION": 2
+    },
+    "recommenda_engine": {
+      "PROJECT_RECOMMENDATION": 2
+    },
+    "engine_project": {
+      "PROJECT_RECOMMENDATION": 2
+    },
+    "evaluate": {
+      "RESUME_ANALYSIS": 2,
+      "CAREER_READINESS": 2,
+      "SKILL_ASSESSMENT": 2
+    },
+    "resume": {
+      "RESUME_ANALYSIS": 6
+    },
+    "at": {
+      "RESUME_ANALYSIS": 4
+    },
+    "align": {
+      "RESUME_ANALYSIS": 2
+    },
+    "evaluate_resume": {
+      "RESUME_ANALYSIS": 2
+    },
+    "resume_at": {
+      "RESUME_ANALYSIS": 2
+    },
+    "at_align": {
+      "RESUME_ANALYSIS": 2
+    },
+    "align_senior": {
+      "RESUME_ANALYSIS": 2
+    },
+    "senior_l4": {
+      "RESUME_ANALYSIS": 2,
+      "CAREER_READINESS": 2
+    },
+    "l4_data": {
+      "RESUME_ANALYSIS": 2
+    },
+    "review": {
+      "RESUME_ANALYSIS": 2
+    },
+    "bullet": {
+      "RESUME_ANALYSIS": 4
+    },
+    "point": {
+      "RESUME_ANALYSIS": 4
+    },
+    "review_resume": {
+      "RESUME_ANALYSIS": 2
+    },
+    "resume_bullet": {
+      "RESUME_ANALYSIS": 2
+    },
+    "bullet_point": {
+      "RESUME_ANALYSIS": 4
+    },
+    "point_machine": {
+      "RESUME_ANALYSIS": 2
+    },
+    "optimize": {
+      "RESUME_ANALYSIS": 2
+    },
+    "cv": {
+      "RESUME_ANALYSIS": 2
+    },
+    "applicant": {
+      "RESUME_ANALYSIS": 2
+    },
+    "optimize_cv": {
+      "RESUME_ANALYSIS": 2
+    },
+    "cv_pass": {
+      "RESUME_ANALYSIS": 2
+    },
+    "pass_applicant": {
+      "RESUME_ANALYSIS": 2
+    },
+    "applicant_track": {
+      "RESUME_ANALYSIS": 2
+    },
+    "track_system": {
+      "RESUME_ANALYSIS": 2
+    },
+    "keyword": {
+      "RESUME_ANALYSIS": 2
+    },
+    "at_keyword": {
+      "RESUME_ANALYSIS": 2
+    },
+    "keyword_miss": {
+      "RESUME_ANALYSIS": 2
+    },
+    "miss_profile": {
+      "RESUME_ANALYSIS": 2
+    },
+    "profile_tech": {
+      "RESUME_ANALYSIS": 2
+    },
+    "rewrite": {
+      "RESUME_ANALYSIS": 2
+    },
+    "experience": {
+      "RESUME_ANALYSIS": 2
+    },
+    "google": {
+      "RESUME_ANALYSIS": 2
+    },
+    "xyz": {
+      "RESUME_ANALYSIS": 2
+    },
+    "formula": {
+      "RESUME_ANALYSIS": 2
+    },
+    "rewrite_work": {
+      "RESUME_ANALYSIS": 2
+    },
+    "work_experience": {
+      "RESUME_ANALYSIS": 2
+    },
+    "experience_bullet": {
+      "RESUME_ANALYSIS": 2
+    },
+    "point_us": {
+      "RESUME_ANALYSIS": 2
+    },
+    "us_google": {
+      "RESUME_ANALYSIS": 2
+    },
+    "google_xyz": {
+      "RESUME_ANALYSIS": 2
+    },
+    "xyz_formula": {
+      "RESUME_ANALYSIS": 2
+    },
+    "audit": {
+      "RESUME_ANALYSIS": 2
+    },
+    "criteria": {
+      "RESUME_ANALYSIS": 2
+    },
+    "audit_resume": {
+      "RESUME_ANALYSIS": 2
+    },
+    "resume_l4": {
+      "RESUME_ANALYSIS": 2
+    },
+    "l4_software": {
+      "RESUME_ANALYSIS": 2
+    },
+    "software_engineer": {
+      "RESUME_ANALYSIS": 2,
+      "GENERAL_CAREER_QUESTION": 2
+    },
+    "engineer_criteria": {
+      "RESUME_ANALYSIS": 2
+    },
+    "ready": {
+      "CAREER_READINESS": 4
+    },
+    "app": {
+      "CAREER_READINESS": 4
+    },
+    "ready_app": {
+      "CAREER_READINESS": 2
+    },
+    "app_data": {
+      "CAREER_READINESS": 2
+    },
+    "scientist_job": {
+      "CAREER_READINESS": 2
+    },
+    "readiness": {
+      "CAREER_READINESS": 4
+    },
+    "score": {
+      "CAREER_READINESS": 4
+    },
+    "percentage": {
+      "CAREER_READINESS": 2
+    },
+    "job_readiness": {
+      "CAREER_READINESS": 2
+    },
+    "readiness_score": {
+      "CAREER_READINESS": 2
+    },
+    "score_percentage": {
+      "CAREER_READINESS": 2
+    },
+    "rol": {
+      "CAREER_READINESS": 2
+    },
+    "app_senior": {
+      "CAREER_READINESS": 2
+    },
+    "l4_rol": {
+      "CAREER_READINESS": 2
+    },
+    "rol_current": {
+      "CAREER_READINESS": 2
+    },
+    "current_72": {
+      "CAREER_READINESS": 2
+    },
+    "72_score": {
+      "CAREER_READINESS": 2
+    },
+    "close_market": {
+      "CAREER_READINESS": 2
+    },
+    "market_ready": {
+      "CAREER_READINESS": 2
+    },
+    "ready_ai": {
+      "CAREER_READINESS": 2
+    },
+    "overall": {
+      "CAREER_READINESS": 2
+    },
+    "competitive": {
+      "CAREER_READINESS": 2
+    },
+    "percentile": {
+      "CAREER_READINESS": 2
+    },
+    "evaluate_overall": {
+      "CAREER_READINESS": 2
+    },
+    "overall_career": {
+      "CAREER_READINESS": 2
+    },
+    "career_readiness": {
+      "CAREER_READINESS": 2
+    },
+    "readiness_competitive": {
+      "CAREER_READINESS": 2
+    },
+    "competitive_percentile": {
+      "CAREER_READINESS": 2
+    },
+    "enough": {
+      "CAREER_READINESS": 2
+    },
+    "start": {
+      "CAREER_READINESS": 2,
+      "FOLLOW_UP_QUERY": 4
+    },
+    "send": {
+      "CAREER_READINESS": 2
+    },
+    "application": {
+      "CAREER_READINESS": 2
+    },
+    "enough_skill": {
+      "CAREER_READINESS": 2
+    },
+    "skill_start": {
+      "CAREER_READINESS": 2
+    },
+    "start_send": {
+      "CAREER_READINESS": 2
+    },
+    "send_job": {
+      "CAREER_READINESS": 2
+    },
+    "job_application": {
+      "CAREER_READINESS": 2
+    },
+    "stand": {
+      "PROGRESS_UPDATE": 2
+    },
+    "stand_learn": {
+      "PROGRESS_UPDATE": 2
+    },
+    "learn_roadmap": {
+      "PROGRESS_UPDATE": 2
+    },
+    "much": {
+      "PROGRESS_UPDATE": 2,
+      "JOB_PREPARATION": 2
+    },
+    "progress": {
+      "PROGRESS_UPDATE": 6
+    },
+    "made": {
+      "PROGRESS_UPDATE": 2
+    },
+    "much_progress": {
+      "PROGRESS_UPDATE": 2
+    },
+    "progress_made": {
+      "PROGRESS_UPDATE": 2
+    },
+    "made_month": {
+      "PROGRESS_UPDATE": 2
+    },
+    "velocity": {
+      "PROGRESS_UPDATE": 2
+    },
+    "logg": {
+      "PROGRESS_UPDATE": 2
+    },
+    "complet": {
+      "PROGRESS_UPDATE": 2,
+      "FOLLOW_UP_QUERY": 2
+    },
+    "milestone": {
+      "PROGRESS_UPDATE": 4
+    },
+    "show_velocity": {
+      "PROGRESS_UPDATE": 2
+    },
+    "velocity_hour": {
+      "PROGRESS_UPDATE": 2
+    },
+    "hour_logg": {
+      "PROGRESS_UPDATE": 2
+    },
+    "logg_complet": {
+      "PROGRESS_UPDATE": 2
+    },
+    "complet_milestone": {
+      "PROGRESS_UPDATE": 2
+    },
+    "milestone_progress": {
+      "PROGRESS_UPDATE": 2
+    },
+    "comple": {
+      "PROGRESS_UPDATE": 2
+    },
+    "verifi": {
+      "PROGRESS_UPDATE": 2
+    },
+    "badg": {
+      "PROGRESS_UPDATE": 2
+    },
+    "track_skill": {
+      "PROGRESS_UPDATE": 2
+    },
+    "skill_comple": {
+      "PROGRESS_UPDATE": 2
+    },
+    "comple_progress": {
+      "PROGRESS_UPDATE": 2
+    },
+    "progress_verifi": {
+      "PROGRESS_UPDATE": 2
+    },
+    "verifi_badg": {
+      "PROGRESS_UPDATE": 2
+    },
+    "hit": {
+      "PROGRESS_UPDATE": 2
+    },
+    "november": {
+      "PROGRESS_UPDATE": 2
+    },
+    "gate": {
+      "PROGRESS_UPDATE": 2
+    },
+    "track_hit": {
+      "PROGRESS_UPDATE": 2
+    },
+    "hit_november": {
+      "PROGRESS_UPDATE": 2
+    },
+    "november_28": {
+      "PROGRESS_UPDATE": 2
+    },
+    "28_milestone": {
+      "PROGRESS_UPDATE": 2
+    },
+    "milestone_gate": {
+      "PROGRESS_UPDATE": 2
+    },
+    "knowledge": {
+      "SKILL_ASSESSMENT": 2
+    },
+    "question": {
+      "SKILL_ASSESSMENT": 2,
+      "JOB_PREPARATION": 2
+    },
+    "test_knowledge": {
+      "SKILL_ASSESSMENT": 2
+    },
+    "knowledge_python": {
+      "SKILL_ASSESSMENT": 2
+    },
+    "python_sql": {
+      "SKILL_ASSESSMENT": 2
+    },
+    "sql_interview": {
+      "SKILL_ASSESSMENT": 2
+    },
+    "interview_question": {
+      "SKILL_ASSESSMENT": 2
+    },
+    "probability": {
+      "SKILL_ASSESSMENT": 2
+    },
+    "evaluate_skill": {
+      "SKILL_ASSESSMENT": 2
+    },
+    "skill_level": {
+      "SKILL_ASSESSMENT": 2
+    },
+    "level_statistic": {
+      "SKILL_ASSESSMENT": 2
+    },
+    "statistic_probability": {
+      "SKILL_ASSESSMENT": 2
+    },
+    "diagnostic": {
+      "SKILL_ASSESSMENT": 2
+    },
+    "quiz": {
+      "SKILL_ASSESSMENT": 2
+    },
+    "algorithm": {
+      "SKILL_ASSESSMENT": 2
+    },
+    "give_diagnostic": {
+      "SKILL_ASSESSMENT": 2
+    },
+    "diagnostic_quiz": {
+      "SKILL_ASSESSMENT": 2
+    },
+    "quiz_machine": {
+      "SKILL_ASSESSMENT": 2
+    },
+    "learn_algorithm": {
+      "SKILL_ASSESSMENT": 2
+    },
+    "conduct": {
+      "SKILL_ASSESSMENT": 2
+    },
+    "assess": {
+      "SKILL_ASSESSMENT": 2
+    },
+    "gradient": {
+      "SKILL_ASSESSMENT": 2
+    },
+    "descent": {
+      "SKILL_ASSESSMENT": 2
+    },
+    "loss": {
+      "SKILL_ASSESSMENT": 2
+    },
+    "function": {
+      "SKILL_ASSESSMENT": 2
+    },
+    "conduct_technical": {
+      "SKILL_ASSESSMENT": 2
+    },
+    "technical_assess": {
+      "SKILL_ASSESSMENT": 2
+    },
+    "assess_gradient": {
+      "SKILL_ASSESSMENT": 2
+    },
+    "gradient_descent": {
+      "SKILL_ASSESSMENT": 2
+    },
+    "descent_loss": {
+      "SKILL_ASSESSMENT": 2
+    },
+    "loss_function": {
+      "SKILL_ASSESSMENT": 2
+    },
+    "object": {
+      "SKILL_ASSESSMENT": 2
+    },
+    "orient": {
+      "SKILL_ASSESSMENT": 2
+    },
+    "structur": {
+      "SKILL_ASSESSMENT": 2
+    },
+    "test_object": {
+      "SKILL_ASSESSMENT": 2
+    },
+    "object_orient": {
+      "SKILL_ASSESSMENT": 2
+    },
+    "orient_programm": {
+      "SKILL_ASSESSMENT": 2
+    },
+    "programm_data": {
+      "SKILL_ASSESSMENT": 2
+    },
+    "data_structur": {
+      "SKILL_ASSESSMENT": 2
+    },
+    "crack": {
+      "JOB_PREPARATION": 2
+    },
+    "round": {
+      "JOB_PREPARATION": 2
+    },
+    "crack_faang": {
+      "JOB_PREPARATION": 2
+    },
+    "faang_ml": {
+      "JOB_PREPARATION": 2
+    },
+    "ml_system": {
+      "JOB_PREPARATION": 2
+    },
+    "system_design": {
+      "JOB_PREPARATION": 2
+    },
+    "design_round": {
+      "JOB_PREPARATION": 2
+    },
+    "prepare": {
+      "JOB_PREPARATION": 2
+    },
+    "prepare_senior": {
+      "JOB_PREPARATION": 2
+    },
+    "scientist_technical": {
+      "JOB_PREPARATION": 2
+    },
+    "behavioral": {
+      "JOB_PREPARATION": 2
+    },
+    "will": {
+      "JOB_PREPARATION": 2
+    },
+    "ask": {
+      "JOB_PREPARATION": 2
+    },
+    "leadership": {
+      "JOB_PREPARATION": 2
+    },
+    "behavioral_question": {
+      "JOB_PREPARATION": 2
+    },
+    "question_will": {
+      "JOB_PREPARATION": 2
+    },
+    "will_ask": {
+      "JOB_PREPARATION": 2
+    },
+    "ask_leadership": {
+      "JOB_PREPARATION": 2
+    },
+    "leadership_interview": {
+      "JOB_PREPARATION": 2
+    },
+    "equity": {
+      "JOB_PREPARATION": 2
+    },
+    "negotiate": {
+      "JOB_PREPARATION": 2
+    },
+    "target": {
+      "JOB_PREPARATION": 2
+    },
+    "much_salary": {
+      "JOB_PREPARATION": 2
+    },
+    "salary_equity": {
+      "JOB_PREPARATION": 2
+    },
+    "equity_should": {
+      "JOB_PREPARATION": 2
+    },
+    "should_negotiate": {
+      "JOB_PREPARATION": 2
+    },
+    "negotiate_target": {
+      "JOB_PREPARATION": 2
+    },
+    "mock": {
+      "JOB_PREPARATION": 2
+    },
+    "practice": {
+      "JOB_PREPARATION": 2
+    },
+    "two": {
+      "JOB_PREPARATION": 2
+    },
+    "stage": {
+      "JOB_PREPARATION": 2
+    },
+    "candidate": {
+      "JOB_PREPARATION": 2
+    },
+    "retrieval": {
+      "JOB_PREPARATION": 2
+    },
+    "mock_interview": {
+      "JOB_PREPARATION": 2
+    },
+    "interview_practice": {
+      "JOB_PREPARATION": 2
+    },
+    "practice_two": {
+      "JOB_PREPARATION": 2
+    },
+    "two_stage": {
+      "JOB_PREPARATION": 2
+    },
+    "stage_candidate": {
+      "JOB_PREPARATION": 2
+    },
+    "candidate_retrieval": {
+      "JOB_PREPARATION": 2
+    },
+    "retrieval_system": {
+      "JOB_PREPARATION": 2
+    },
+    "negotia": {
+      "JOB_PREPARATION": 2
+    },
+    "tactic": {
+      "JOB_PREPARATION": 2
+    },
+    "total": {
+      "JOB_PREPARATION": 2
+    },
+    "offer": {
+      "JOB_PREPARATION": 2
+    },
+    "salary_negotia": {
+      "JOB_PREPARATION": 2
+    },
+    "negotia_tactic": {
+      "JOB_PREPARATION": 2
+    },
+    "tactic_faang": {
+      "JOB_PREPARATION": 2
+    },
+    "faang_total": {
+      "JOB_PREPARATION": 2
+    },
+    "total_compensa": {
+      "JOB_PREPARATION": 2
+    },
+    "compensa_offer": {
+      "JOB_PREPARATION": 2
+    },
+    "certifica": {
+      "CERTIFICATION_ADVICE": 4
+    },
+    "aw": {
+      "CERTIFICATION_ADVICE": 4
+    },
+    "gcp": {
+      "CERTIFICATION_ADVICE": 2
+    },
+    "cloud_certifica": {
+      "CERTIFICATION_ADVICE": 2
+    },
+    "certifica_should": {
+      "CERTIFICATION_ADVICE": 2
+    },
+    "should_get": {
+      "CERTIFICATION_ADVICE": 2
+    },
+    "get_aw": {
+      "CERTIFICATION_ADVICE": 2
+    },
+    "aw_gcp": {
+      "CERTIFICATION_ADVICE": 2
+    },
+    "certifi": {
+      "CERTIFICATION_ADVICE": 2
+    },
+    "specialty": {
+      "CERTIFICATION_ADVICE": 2
+    },
+    "worth": {
+      "CERTIFICATION_ADVICE": 2
+    },
+    "aw_certifi": {
+      "CERTIFICATION_ADVICE": 2
+    },
+    "certifi_machine": {
+      "CERTIFICATION_ADVICE": 2
+    },
+    "learn_specialty": {
+      "CERTIFICATION_ADVICE": 2
+    },
+    "specialty_worth": {
+      "CERTIFICATION_ADVICE": 2
+    },
+    "certification": {
+      "CERTIFICATION_ADVICE": 4
+    },
+    "recogniz": {
+      "CERTIFICATION_ADVICE": 2
+    },
+    "certification_recogniz": {
+      "CERTIFICATION_ADVICE": 2
+    },
+    "recogniz_devop": {
+      "CERTIFICATION_ADVICE": 2
+    },
+    "devop_kubernet": {
+      "CERTIFICATION_ADVICE": 2
+    },
+    "validate": {
+      "CERTIFICATION_ADVICE": 2
+    },
+    "linkedin": {
+      "CERTIFICATION_ADVICE": 2
+    },
+    "best_certification": {
+      "CERTIFICATION_ADVICE": 2
+    },
+    "certification_validate": {
+      "CERTIFICATION_ADVICE": 2
+    },
+    "validate_data": {
+      "CERTIFICATION_ADVICE": 2
+    },
+    "science_skill": {
+      "CERTIFICATION_ADVICE": 2
+    },
+    "skill_linkedin": {
+      "CERTIFICATION_ADVICE": 2
+    },
+    "cka": {
+      "CERTIFICATION_ADVICE": 2
+    },
+    "platform": {
+      "CERTIFICATION_ADVICE": 2
+    },
+    "cka_certifica": {
+      "CERTIFICATION_ADVICE": 2
+    },
+    "certifica_help": {
+      "CERTIFICATION_ADVICE": 2
+    },
+    "help_get": {
+      "CERTIFICATION_ADVICE": 2
+    },
+    "get_cloud": {
+      "CERTIFICATION_ADVICE": 2
+    },
+    "cloud_platform": {
+      "CERTIFICATION_ADVICE": 2
+    },
+    "platform_job": {
+      "CERTIFICATION_ADVICE": 2
+    },
+    "ai/ml": {
+      "CAREER_ROADMAP": 2
+    },
+    "step": {
+      "CAREER_ROADMAP": 8,
+      "FOLLOW_UP_QUERY": 2
+    },
+    "become_ai/ml": {
+      "CAREER_ROADMAP": 2
+    },
+    "ai/ml_engineer": {
+      "CAREER_ROADMAP": 2
+    },
+    "engineer_step": {
+      "CAREER_ROADMAP": 2
+    },
+    "step_step": {
+      "CAREER_ROADMAP": 4
+    },
+    "pathway": {
+      "CAREER_ROADMAP": 2
+    },
+    "step_pathway": {
+      "CAREER_ROADMAP": 2
+    },
+    "pathway_become": {
+      "CAREER_ROADMAP": 2
+    },
+    "become_solution": {
+      "CAREER_ROADMAP": 2
+    },
+    "complete": {
+      "CAREER_ROADMAP": 2
+    },
+    "web": {
+      "CAREER_ROADMAP": 2
+    },
+    "complete_roadmap": {
+      "CAREER_ROADMAP": 2
+    },
+    "roadmap_transi": {
+      "CAREER_ROADMAP": 2
+    },
+    "transi_web": {
+      "CAREER_ROADMAP": 2
+    },
+    "web_developer": {
+      "CAREER_ROADMAP": 2
+    },
+    "developer_data": {
+      "CAREER_ROADMAP": 2
+    },
+    "chronological": {
+      "CAREER_ROADMAP": 2
+    },
+    "progression": {
+      "CAREER_ROADMAP": 2
+    },
+    "chronological_progression": {
+      "CAREER_ROADMAP": 2
+    },
+    "progression_cloud": {
+      "CAREER_ROADMAP": 2
+    },
+    "cloud_devop": {
+      "CAREER_ROADMAP": 2
+    },
+    "staff": {
+      "CAREER_ROADMAP": 2
+    },
+    "principal": {
+      "CAREER_ROADMAP": 2
+    },
+    "year": {
+      "CAREER_ROADMAP": 2
+    },
+    "become_staff": {
+      "CAREER_ROADMAP": 2
+    },
+    "staff_engineer": {
+      "CAREER_ROADMAP": 2
+    },
+    "engineer_principal": {
+      "CAREER_ROADMAP": 2
+    },
+    "principal_architect": {
+      "CAREER_ROADMAP": 2
+    },
+    "architect_year": {
+      "CAREER_ROADMAP": 2
+    },
+    "should_start": {
+      "FOLLOW_UP_QUERY": 2
+    },
+    "start_first": {
+      "FOLLOW_UP_QUERY": 2
+    },
+    "should_learn": {
+      "FOLLOW_UP_QUERY": 2
+    },
+    "next_step": {
+      "FOLLOW_UP_QUERY": 2
+    },
+    "start_deep": {
+      "FOLLOW_UP_QUERY": 2
+    },
+    "learn_ne": {
+      "FOLLOW_UP_QUERY": 2
+    },
+    "ne_prerequisit": {
+      "FOLLOW_UP_QUERY": 2
+    },
+    "complet_statistic": {
+      "FOLLOW_UP_QUERY": 2
+    },
+    "statistic_should": {
+      "FOLLOW_UP_QUERY": 2
+    },
+    "should_study": {
+      "FOLLOW_UP_QUERY": 2
+    },
+    "study_next": {
+      "FOLLOW_UP_QUERY": 2
+    },
+    "com": {
+      "FOLLOW_UP_QUERY": 2
+    },
+    "sequence": {
+      "FOLLOW_UP_QUERY": 2
+    },
+    "com_next": {
+      "FOLLOW_UP_QUERY": 2
+    },
+    "next_sequence": {
+      "FOLLOW_UP_QUERY": 2
+    },
+    "day_life": {
+      "GENERAL_CAREER_QUESTION": 2
+    },
+    "life_data": {
+      "GENERAL_CAREER_QUESTION": 2
+    },
+    "every": {
+      "GENERAL_CAREER_QUESTION": 2
+    },
+    "engineer_every": {
+      "GENERAL_CAREER_QUESTION": 2
+    },
+    "every_day": {
+      "GENERAL_CAREER_QUESTION": 2
+    },
+    "average": {
+      "GENERAL_CAREER_QUESTION": 2
+    },
+    "demand": {
+      "GENERAL_CAREER_QUESTION": 2
+    },
+    "average_market": {
+      "GENERAL_CAREER_QUESTION": 2
+    },
+    "market_salary": {
+      "GENERAL_CAREER_QUESTION": 2
+    },
+    "salary_demand": {
+      "GENERAL_CAREER_QUESTION": 2
+    },
+    "demand_solution": {
+      "GENERAL_CAREER_QUESTION": 2
+    },
+    "industry": {
+      "GENERAL_CAREER_QUESTION": 2
+    },
+    "outlook": {
+      "GENERAL_CAREER_QUESTION": 2
+    },
+    "decade": {
+      "GENERAL_CAREER_QUESTION": 2
+    },
+    "industry_outlook": {
+      "GENERAL_CAREER_QUESTION": 2
+    },
+    "outlook_cybersecurity": {
+      "GENERAL_CAREER_QUESTION": 2
+    },
+    "cybersecurity_next": {
+      "GENERAL_CAREER_QUESTION": 2
+    },
+    "next_decade": {
+      "GENERAL_CAREER_QUESTION": 2
+    },
+    "explain": {
+      "GENERAL_CAREER_QUESTION": 2
+    },
+    "large": {
+      "GENERAL_CAREER_QUESTION": 2
+    },
+    "language": {
+      "GENERAL_CAREER_QUESTION": 2
+    },
+    "model": {
+      "GENERAL_CAREER_QUESTION": 2
+    },
+    "impact": {
+      "GENERAL_CAREER_QUESTION": 2
+    },
+    "explain_large": {
+      "GENERAL_CAREER_QUESTION": 2
+    },
+    "large_language": {
+      "GENERAL_CAREER_QUESTION": 2
+    },
+    "language_model": {
+      "GENERAL_CAREER_QUESTION": 2
+    },
+    "model_impact": {
+      "GENERAL_CAREER_QUESTION": 2
+    },
+    "impact_software": {
+      "GENERAL_CAREER_QUESTION": 2
+    },
+    "engineer_job": {
+      "GENERAL_CAREER_QUESTION": 2
+    }
+  },
+  "idf": {
+    "15": 4.951243718581427,
+    "28": 4.951243718581427,
+    "30": 4.951243718581427,
+    "72": 4.951243718581427,
+    "2025": 4.951243718581427,
+    "career": 3.341805806147327,
+    "choose": 4.258096538021482,
+    "background": 4.951243718581427,
+    "career_choose": 4.951243718581427,
+    "choose_background": 4.951243718581427,
+    "path": 4.951243718581427,
+    "fit": 4.545778610473263,
+    "cod": 4.951243718581427,
+    "math": 4.951243718581427,
+    "profile": 4.545778610473263,
+    "career_path": 4.951243718581427,
+    "path_fit": 4.951243718581427,
+    "fit_cod": 4.951243718581427,
+    "cod_math": 4.951243718581427,
+    "math_profile": 4.951243718581427,
+    "recommend": 4.034952986707273,
+    "high": 4.545778610473263,
+    "pay": 4.951243718581427,
+    "tech": 4.258096538021482,
+    "job": 3.5649493574615367,
+    "computer": 4.951243718581427,
+    "science": 4.258096538021482,
+    "graduate": 4.951243718581427,
+    "recommend_high": 4.951243718581427,
+    "high_pay": 4.951243718581427,
+    "pay_tech": 4.951243718581427,
+    "tech_job": 4.951243718581427,
+    "job_computer": 4.951243718581427,
+    "computer_science": 4.951243718581427,
+    "science_graduate": 4.951243718581427,
+    "should": 3.0794415416798357,
+    "pursue": 4.951243718581427,
+    "like": 4.951243718581427,
+    "data": 2.8718021769015913,
+    "problem": 4.951243718581427,
+    "solv": 4.951243718581427,
+    "career_should": 4.951243718581427,
+    "should_pursue": 4.951243718581427,
+    "pursue_like": 4.951243718581427,
+    "like_data": 4.951243718581427,
+    "data_problem": 4.951243718581427,
+    "problem_solv": 4.951243718581427,
+    "help": 4.545778610473263,
+    "discover": 4.545778610473263,
+    "artificial": 4.951243718581427,
+    "intelligence": 4.951243718581427,
+    "machine": 3.2464956263430023,
+    "learn": 2.59986846141795,
+    "help_discover": 4.951243718581427,
+    "discover_career": 4.951243718581427,
+    "career_artificial": 4.951243718581427,
+    "artificial_intelligence": 4.951243718581427,
+    "intelligence_machine": 4.951243718581427,
+    "machine_learn": 3.2464956263430023,
+    "skill": 2.8718021769015913,
+    "set": 4.951243718581427,
+    "best": 3.5649493574615367,
+    "job_fit": 4.951243718581427,
+    "fit_skill": 4.951243718581427,
+    "skill_set": 4.951243718581427,
+    "set_best": 4.951243718581427,
+    "don": 4.951243718581427,
+    "know": 4.545778610473263,
+    "pick": 4.951243718581427,
+    "option": 4.951243718581427,
+    "don_know": 4.951243718581427,
+    "know_career": 4.951243718581427,
+    "career_pick": 4.951243718581427,
+    "pick_option": 4.951243718581427,
+    "growth": 4.951243718581427,
+    "track": 4.034952986707273,
+    "discover_high": 4.951243718581427,
+    "high_growth": 4.951243718581427,
+    "growth_career": 4.951243718581427,
+    "career_track": 4.951243718581427,
+    "track_2025": 4.951243718581427,
+    "role": 4.545778610473263,
+    "transi": 4.545778610473263,
+    "analyst": 4.034952986707273,
+    "role_transi": 4.951243718581427,
+    "transi_data": 4.951243718581427,
+    "data_analyst": 4.545778610473263,
+    "work": 4.545778610473263,
+    "life": 4.545778610473263,
+    "balance": 4.951243718581427,
+    "compensa": 4.258096538021482,
+    "career_best": 4.951243718581427,
+    "best_work": 4.951243718581427,
+    "work_life": 4.951243718581427,
+    "life_balance": 4.951243718581427,
+    "balance_compensa": 4.951243718581427,
+    "ai": 3.8526314299133175,
+    "engineer": 2.6999519199749322,
+    "scientist": 3.5649493574615367,
+    "one": 4.951243718581427,
+    "ai_engineer": 3.8526314299133175,
+    "engineer_data": 4.951243718581427,
+    "data_scientist": 3.5649493574615367,
+    "scientist_one": 4.951243718581427,
+    "one_should": 4.951243718581427,
+    "should_choose": 4.545778610473263,
+    "difference": 4.545778610473263,
+    "v": 4.034952986707273,
+    "difference_data": 4.951243718581427,
+    "analyst_v": 4.545778610473263,
+    "v_data": 4.951243718581427,
+    "data_engineer": 4.545778610473263,
+    "compare": 4.951243718581427,
+    "versu": 4.258096538021482,
+    "software": 4.258096538021482,
+    "developer": 3.8526314299133175,
+    "compare_machine": 4.951243718581427,
+    "learn_engineer": 4.258096538021482,
+    "engineer_versu": 4.951243718581427,
+    "versu_software": 4.951243718581427,
+    "software_developer": 4.951243718581427,
+    "frontend": 4.951243718581427,
+    "full": 4.258096538021482,
+    "stack": 4.258096538021482,
+    "salary": 4.034952986707273,
+    "difficulty": 4.951243718581427,
+    "frontend_developer": 4.951243718581427,
+    "developer_v": 4.951243718581427,
+    "v_full": 4.951243718581427,
+    "full_stack": 4.258096538021482,
+    "stack_developer": 4.545778610473263,
+    "developer_salary": 4.951243718581427,
+    "salary_difficulty": 4.951243718581427,
+    "devop": 4.034952986707273,
+    "cloud": 3.8526314299133175,
+    "solution": 4.034952986707273,
+    "architect": 3.8526314299133175,
+    "choose_devop": 4.951243718581427,
+    "devop_cloud": 4.951243718581427,
+    "cloud_solution": 4.951243718581427,
+    "solution_architect": 4.034952986707273,
+    "product": 4.545778610473263,
+    "manager": 4.545778610473263,
+    "technical": 3.8526314299133175,
+    "program": 4.951243718581427,
+    "trajectory": 4.951243718581427,
+    "product_manager": 4.951243718581427,
+    "manager_v": 4.951243718581427,
+    "v_technical": 4.951243718581427,
+    "technical_program": 4.951243718581427,
+    "program_manager": 4.951243718581427,
+    "manager_career": 4.951243718581427,
+    "career_trajectory": 4.951243718581427,
+    "cybersecurity": 4.545778610473263,
+    "comparison": 4.951243718581427,
+    "cybersecurity_analyst": 4.951243718581427,
+    "analyst_versu": 4.951243718581427,
+    "versu_cloud": 4.951243718581427,
+    "cloud_engineer": 4.951243718581427,
+    "engineer_comparison": 4.951243718581427,
+    "financial": 4.951243718581427,
+    "invest": 4.951243718581427,
+    "banker": 4.951243718581427,
+    "hour": 4.258096538021482,
+    "financial_analyst": 4.951243718581427,
+    "v_invest": 4.951243718581427,
+    "invest_banker": 4.951243718581427,
+    "banker_compensa": 4.951243718581427,
+    "compensa_hour": 4.951243718581427,
+    "ui/ux": 4.951243718581427,
+    "designer": 4.951243718581427,
+    "ui/ux_designer": 4.951243718581427,
+    "designer_versu": 4.951243718581427,
+    "versu_product": 4.951243718581427,
+    "product_designer": 4.951243718581427,
+    "designer_difference": 4.951243718581427,
+    "requir": 4.951243718581427,
+    "senior": 3.8526314299133175,
+    "skill_requir": 4.951243718581427,
+    "requir_senior": 4.951243718581427,
+    "senior_data": 4.545778610473263,
+    "ne": 4.034952986707273,
+    "become": 4.034952986707273,
+    "ne_know": 4.951243718581427,
+    "know_become": 4.951243718581427,
+    "become_machine": 4.951243718581427,
+    "need": 4.951243718581427,
+    "skill_need": 4.951243718581427,
+    "need_full": 4.951243718581427,
+    "developer_role": 4.951243718581427,
+    "programm": 4.545778610473263,
+    "languag": 4.951243718581427,
+    "programm_languag": 4.951243718581427,
+    "languag_devop": 4.951243718581427,
+    "devop_engineer": 4.545778610473263,
+    "engineer_ne": 4.951243718581427,
+    "core": 4.951243718581427,
+    "competency": 4.545778610473263,
+    "core_competency": 4.951243718581427,
+    "competency_ai": 4.951243718581427,
+    "requirement": 4.951243718581427,
+    "prerequisit": 4.545778610473263,
+    "requirement_prerequisit": 4.951243718581427,
+    "prerequisit_solution": 4.951243718581427,
+    "top": 4.951243718581427,
+    "company": 4.545778610473263,
+    "look": 4.951243718581427,
+    "backend": 4.951243718581427,
+    "technical_skill": 4.951243718581427,
+    "skill_top": 4.951243718581427,
+    "top_tech": 4.951243718581427,
+    "tech_company": 4.545778610473263,
+    "company_look": 4.951243718581427,
+    "look_backend": 4.951243718581427,
+    "backend_developer": 4.951243718581427,
+    "list": 4.951243718581427,
+    "essential": 4.951243718581427,
+    "tool": 4.951243718581427,
+    "analytic": 4.951243718581427,
+    "list_essential": 4.951243718581427,
+    "essential_tool": 4.951243718581427,
+    "tool_skill": 4.951243718581427,
+    "skill_data": 4.951243718581427,
+    "data_analytic": 4.951243718581427,
+    "biggest": 4.951243718581427,
+    "gap": 4.545778610473263,
+    "biggest_skill": 4.951243718581427,
+    "skill_gap": 4.545778610473263,
+    "gap_data": 4.951243718581427,
+    "miss": 4.545778610473263,
+    "reach": 4.951243718581427,
+    "l4": 4.034952986707273,
+    "skill_miss": 4.951243718581427,
+    "miss_reach": 4.951243718581427,
+    "reach_l4": 4.951243718581427,
+    "l4_senior": 4.951243718581427,
+    "senior_engineer": 4.951243718581427,
+    "deficit": 4.258096538021482,
+    "statistic": 4.034952986707273,
+    "deficit_machine": 4.951243718581427,
+    "learn_statistic": 4.951243718581427,
+    "analyze": 4.951243718581427,
+    "current": 4.545778610473263,
+    "market": 4.258096538021482,
+    "benchmark": 4.951243718581427,
+    "analyze_skill": 4.951243718581427,
+    "gap_current": 4.951243718581427,
+    "current_market": 4.951243718581427,
+    "market_benchmark": 4.951243718581427,
+    "lack": 4.951243718581427,
+    "matrix": 4.951243718581427,
+    "lack_competency": 4.951243718581427,
+    "competency_matrix": 4.951243718581427,
+    "weakness": 4.951243718581427,
+    "fix": 4.951243718581427,
+    "first": 4.545778610473263,
+    "get": 4.258096538021482,
+    "hir": 4.545778610473263,
+    "weakness_should": 4.951243718581427,
+    "should_fix": 4.951243718581427,
+    "fix_first": 4.951243718581427,
+    "first_get": 4.951243718581427,
+    "get_hir": 4.951243718581427,
+    "show": 4.545778610473263,
+    "priority": 4.951243718581427,
+    "bottleneck": 4.951243718581427,
+    "show_skill": 4.951243718581427,
+    "skill_deficit": 4.951243718581427,
+    "deficit_priority": 4.951243718581427,
+    "priority_bottleneck": 4.951243718581427,
+    "improve": 4.951243718581427,
+    "pass": 4.545778610473263,
+    "interview": 3.8526314299133175,
+    "skill_ne": 4.951243718581427,
+    "ne_improve": 4.951243718581427,
+    "improve_pass": 4.951243718581427,
+    "pass_technical": 4.951243718581427,
+    "technical_interview": 4.545778610473263,
+    "generate": 4.951243718581427,
+    "day": 4.258096538021482,
+    "sprint": 4.545778610473263,
+    "plan": 4.258096538021482,
+    "close": 4.545778610473263,
+    "ml": 4.545778610473263,
+    "generate_30": 4.951243718581427,
+    "30_day": 4.951243718581427,
+    "day_sprint": 4.951243718581427,
+    "sprint_plan": 4.951243718581427,
+    "plan_close": 4.951243718581427,
+    "close_ml": 4.951243718581427,
+    "ml_deficit": 4.951243718581427,
+    "give": 4.258096538021482,
+    "month": 4.258096538021482,
+    "curriculum": 4.951243718581427,
+    "deep": 4.545778610473263,
+    "pytorch": 4.258096538021482,
+    "give_month": 4.951243718581427,
+    "month_curriculum": 4.951243718581427,
+    "curriculum_deep": 4.951243718581427,
+    "deep_learn": 4.545778610473263,
+    "learn_pytorch": 4.951243718581427,
+    "create": 4.951243718581427,
+    "week": 4.258096538021482,
+    "study": 4.034952986707273,
+    "schedule": 4.951243718581427,
+    "create_week": 4.951243718581427,
+    "week_week": 4.951243718581427,
+    "week_study": 4.951243718581427,
+    "study_schedule": 4.951243718581427,
+    "schedule_machine": 4.951243718581427,
+    "structure": 4.951243718581427,
+    "next": 3.8526314299133175,
+    "should_structure": 4.951243718581427,
+    "structure_learn": 4.951243718581427,
+    "learn_plan": 4.545778610473263,
+    "plan_next": 4.951243718581427,
+    "next_month": 4.951243718581427,
+    "roadmap": 4.258096538021482,
+    "sql": 4.545778610473263,
+    "python": 4.545778610473263,
+    "fast": 4.951243718581427,
+    "best_week": 4.951243718581427,
+    "week_roadmap": 4.951243718581427,
+    "roadmap_learn": 4.951243718581427,
+    "learn_sql": 4.951243718581427,
+    "sql_python": 4.951243718581427,
+    "python_fast": 4.951243718581427,
+    "design": 4.545778610473263,
+    "15_hour": 4.951243718581427,
+    "hour_week": 4.951243718581427,
+    "week_design": 4.951243718581427,
+    "design_learn": 4.951243718581427,
+    "build": 4.258096538021482,
+    "intensive": 4.951243718581427,
+    "transformer": 4.951243718581427,
+    "llm": 4.951243718581427,
+    "build_intensive": 4.951243718581427,
+    "intensive_study": 4.951243718581427,
+    "study_sprint": 4.951243718581427,
+    "sprint_learn": 4.951243718581427,
+    "learn_transformer": 4.951243718581427,
+    "transformer_llm": 4.951243718581427,
+    "advanc": 4.951243718581427,
+    "hypothesi": 4.951243718581427,
+    "test": 4.258096538021482,
+    "learn_advanc": 4.951243718581427,
+    "advanc_statistic": 4.951243718581427,
+    "statistic_hypothesi": 4.951243718581427,
+    "hypothesi_test": 4.951243718581427,
+    "cours": 4.951243718581427,
+    "book": 4.951243718581427,
+    "recommend_best": 4.951243718581427,
+    "best_cours": 4.951243718581427,
+    "cours_book": 4.951243718581427,
+    "book_machine": 4.951243718581427,
+    "tutorial": 4.951243718581427,
+    "documenta": 4.951243718581427,
+    "docker": 4.951243718581427,
+    "kubernet": 4.545778610473263,
+    "best_tutorial": 4.951243718581427,
+    "tutorial_documenta": 4.951243718581427,
+    "documenta_learn": 4.951243718581427,
+    "learn_docker": 4.951243718581427,
+    "docker_kubernet": 4.951243718581427,
+    "distribut": 4.951243718581427,
+    "system": 4.034952986707273,
+    "microservic": 4.951243718581427,
+    "study_distribut": 4.951243718581427,
+    "distribut_system": 4.951243718581427,
+    "system_microservic": 4.951243718581427,
+    "free": 4.951243718581427,
+    "resourc": 4.951243718581427,
+    "interactive": 4.951243718581427,
+    "lab": 4.951243718581427,
+    "free_resourc": 4.951243718581427,
+    "resourc_interactive": 4.951243718581427,
+    "interactive_lab": 4.951243718581427,
+    "lab_pytorch": 4.951243718581427,
+    "youtube": 4.951243718581427,
+    "channel": 4.951243718581427,
+    "coursera": 4.951243718581427,
+    "specialization": 4.951243718581427,
+    "best_youtube": 4.951243718581427,
+    "youtube_channel": 4.951243718581427,
+    "channel_coursera": 4.951243718581427,
+    "coursera_specialization": 4.951243718581427,
+    "specialization_data": 4.951243718581427,
+    "data_science": 4.545778610473263,
+    "portfolio": 4.545778610473263,
+    "project": 3.6984807500860595,
+    "showcase": 4.951243718581427,
+    "recommend_portfolio": 4.951243718581427,
+    "portfolio_project": 4.951243718581427,
+    "project_showcase": 4.951243718581427,
+    "showcase_machine": 4.951243718581427,
+    "learn_skill": 4.951243718581427,
+    "capstone": 4.951243718581427,
+    "capstone_project": 4.951243718581427,
+    "project_should": 4.545778610473263,
+    "should_build": 4.545778610473263,
+    "build_ai": 4.951243718581427,
+    "engineer_portfolio": 4.951243718581427,
+    "produc": 4.951243718581427,
+    "level": 4.545778610473263,
+    "idea": 4.951243718581427,
+    "us": 4.258096538021482,
+    "fastapi": 4.951243718581427,
+    "give_produc": 4.951243718581427,
+    "produc_level": 4.951243718581427,
+    "level_project": 4.951243718581427,
+    "project_idea": 4.951243718581427,
+    "idea_us": 4.951243718581427,
+    "us_fastapi": 4.951243718581427,
+    "fastapi_pytorch": 4.951243718581427,
+    "hand": 4.951243718581427,
+    "impress": 4.951243718581427,
+    "faang": 4.258096538021482,
+    "hand_project": 4.951243718581427,
+    "project_impress": 4.951243718581427,
+    "impress_hir": 4.951243718581427,
+    "hir_manager": 4.951243718581427,
+    "manager_faang": 4.951243718581427,
+    "react": 4.951243718581427,
+    "node": 4.951243718581427,
+    "j": 4.951243718581427,
+    "stack_project": 4.951243718581427,
+    "build_us": 4.951243718581427,
+    "us_react": 4.951243718581427,
+    "react_node": 4.951243718581427,
+    "node_j": 4.951243718581427,
+    "customer": 4.951243718581427,
+    "churn": 4.951243718581427,
+    "predictor": 4.951243718581427,
+    "real": 4.951243718581427,
+    "time": 4.951243718581427,
+    "recommenda": 4.951243718581427,
+    "engine": 4.951243718581427,
+    "recommend_customer": 4.951243718581427,
+    "customer_churn": 4.951243718581427,
+    "churn_predictor": 4.951243718581427,
+    "predictor_real": 4.951243718581427,
+    "real_time": 4.951243718581427,
+    "time_recommenda": 4.951243718581427,
+    "recommenda_engine": 4.951243718581427,
+    "engine_project": 4.951243718581427,
+    "evaluate": 4.258096538021482,
+    "resume": 4.258096538021482,
+    "at": 4.545778610473263,
+    "align": 4.951243718581427,
+    "evaluate_resume": 4.951243718581427,
+    "resume_at": 4.951243718581427,
+    "at_align": 4.951243718581427,
+    "align_senior": 4.951243718581427,
+    "senior_l4": 4.545778610473263,
+    "l4_data": 4.951243718581427,
+    "review": 4.951243718581427,
+    "bullet": 4.545778610473263,
+    "point": 4.545778610473263,
+    "review_resume": 4.951243718581427,
+    "resume_bullet": 4.951243718581427,
+    "bullet_point": 4.545778610473263,
+    "point_machine": 4.951243718581427,
+    "optimize": 4.951243718581427,
+    "cv": 4.951243718581427,
+    "applicant": 4.951243718581427,
+    "optimize_cv": 4.951243718581427,
+    "cv_pass": 4.951243718581427,
+    "pass_applicant": 4.951243718581427,
+    "applicant_track": 4.951243718581427,
+    "track_system": 4.951243718581427,
+    "keyword": 4.951243718581427,
+    "at_keyword": 4.951243718581427,
+    "keyword_miss": 4.951243718581427,
+    "miss_profile": 4.951243718581427,
+    "profile_tech": 4.951243718581427,
+    "rewrite": 4.951243718581427,
+    "experience": 4.951243718581427,
+    "google": 4.951243718581427,
+    "xyz": 4.951243718581427,
+    "formula": 4.951243718581427,
+    "rewrite_work": 4.951243718581427,
+    "work_experience": 4.951243718581427,
+    "experience_bullet": 4.951243718581427,
+    "point_us": 4.951243718581427,
+    "us_google": 4.951243718581427,
+    "google_xyz": 4.951243718581427,
+    "xyz_formula": 4.951243718581427,
+    "audit": 4.951243718581427,
+    "criteria": 4.951243718581427,
+    "audit_resume": 4.951243718581427,
+    "resume_l4": 4.951243718581427,
+    "l4_software": 4.951243718581427,
+    "software_engineer": 4.545778610473263,
+    "engineer_criteria": 4.951243718581427,
+    "ready": 4.545778610473263,
+    "app": 4.545778610473263,
+    "ready_app": 4.951243718581427,
+    "app_data": 4.951243718581427,
+    "scientist_job": 4.951243718581427,
+    "readiness": 4.545778610473263,
+    "score": 4.545778610473263,
+    "percentage": 4.951243718581427,
+    "job_readiness": 4.951243718581427,
+    "readiness_score": 4.951243718581427,
+    "score_percentage": 4.951243718581427,
+    "rol": 4.951243718581427,
+    "app_senior": 4.951243718581427,
+    "l4_rol": 4.951243718581427,
+    "rol_current": 4.951243718581427,
+    "current_72": 4.951243718581427,
+    "72_score": 4.951243718581427,
+    "close_market": 4.951243718581427,
+    "market_ready": 4.951243718581427,
+    "ready_ai": 4.951243718581427,
+    "overall": 4.951243718581427,
+    "competitive": 4.951243718581427,
+    "percentile": 4.951243718581427,
+    "evaluate_overall": 4.951243718581427,
+    "overall_career": 4.951243718581427,
+    "career_readiness": 4.951243718581427,
+    "readiness_competitive": 4.951243718581427,
+    "competitive_percentile": 4.951243718581427,
+    "enough": 4.951243718581427,
+    "start": 4.258096538021482,
+    "send": 4.951243718581427,
+    "application": 4.951243718581427,
+    "enough_skill": 4.951243718581427,
+    "skill_start": 4.951243718581427,
+    "start_send": 4.951243718581427,
+    "send_job": 4.951243718581427,
+    "job_application": 4.951243718581427,
+    "stand": 4.951243718581427,
+    "stand_learn": 4.951243718581427,
+    "learn_roadmap": 4.951243718581427,
+    "much": 4.545778610473263,
+    "progress": 4.258096538021482,
+    "made": 4.951243718581427,
+    "much_progress": 4.951243718581427,
+    "progress_made": 4.951243718581427,
+    "made_month": 4.951243718581427,
+    "velocity": 4.951243718581427,
+    "logg": 4.951243718581427,
+    "complet": 4.545778610473263,
+    "milestone": 4.545778610473263,
+    "show_velocity": 4.951243718581427,
+    "velocity_hour": 4.951243718581427,
+    "hour_logg": 4.951243718581427,
+    "logg_complet": 4.951243718581427,
+    "complet_milestone": 4.951243718581427,
+    "milestone_progress": 4.951243718581427,
+    "comple": 4.951243718581427,
+    "verifi": 4.951243718581427,
+    "badg": 4.951243718581427,
+    "track_skill": 4.951243718581427,
+    "skill_comple": 4.951243718581427,
+    "comple_progress": 4.951243718581427,
+    "progress_verifi": 4.951243718581427,
+    "verifi_badg": 4.951243718581427,
+    "hit": 4.951243718581427,
+    "november": 4.951243718581427,
+    "gate": 4.951243718581427,
+    "track_hit": 4.951243718581427,
+    "hit_november": 4.951243718581427,
+    "november_28": 4.951243718581427,
+    "28_milestone": 4.951243718581427,
+    "milestone_gate": 4.951243718581427,
+    "knowledge": 4.951243718581427,
+    "question": 4.545778610473263,
+    "test_knowledge": 4.951243718581427,
+    "knowledge_python": 4.951243718581427,
+    "python_sql": 4.951243718581427,
+    "sql_interview": 4.951243718581427,
+    "interview_question": 4.951243718581427,
+    "probability": 4.951243718581427,
+    "evaluate_skill": 4.951243718581427,
+    "skill_level": 4.951243718581427,
+    "level_statistic": 4.951243718581427,
+    "statistic_probability": 4.951243718581427,
+    "diagnostic": 4.951243718581427,
+    "quiz": 4.951243718581427,
+    "algorithm": 4.951243718581427,
+    "give_diagnostic": 4.951243718581427,
+    "diagnostic_quiz": 4.951243718581427,
+    "quiz_machine": 4.951243718581427,
+    "learn_algorithm": 4.951243718581427,
+    "conduct": 4.951243718581427,
+    "assess": 4.951243718581427,
+    "gradient": 4.951243718581427,
+    "descent": 4.951243718581427,
+    "loss": 4.951243718581427,
+    "function": 4.951243718581427,
+    "conduct_technical": 4.951243718581427,
+    "technical_assess": 4.951243718581427,
+    "assess_gradient": 4.951243718581427,
+    "gradient_descent": 4.951243718581427,
+    "descent_loss": 4.951243718581427,
+    "loss_function": 4.951243718581427,
+    "object": 4.951243718581427,
+    "orient": 4.951243718581427,
+    "structur": 4.951243718581427,
+    "test_object": 4.951243718581427,
+    "object_orient": 4.951243718581427,
+    "orient_programm": 4.951243718581427,
+    "programm_data": 4.951243718581427,
+    "data_structur": 4.951243718581427,
+    "crack": 4.951243718581427,
+    "round": 4.951243718581427,
+    "crack_faang": 4.951243718581427,
+    "faang_ml": 4.951243718581427,
+    "ml_system": 4.951243718581427,
+    "system_design": 4.951243718581427,
+    "design_round": 4.951243718581427,
+    "prepare": 4.951243718581427,
+    "prepare_senior": 4.951243718581427,
+    "scientist_technical": 4.951243718581427,
+    "behavioral": 4.951243718581427,
+    "will": 4.951243718581427,
+    "ask": 4.951243718581427,
+    "leadership": 4.951243718581427,
+    "behavioral_question": 4.951243718581427,
+    "question_will": 4.951243718581427,
+    "will_ask": 4.951243718581427,
+    "ask_leadership": 4.951243718581427,
+    "leadership_interview": 4.951243718581427,
+    "equity": 4.951243718581427,
+    "negotiate": 4.951243718581427,
+    "target": 4.951243718581427,
+    "much_salary": 4.951243718581427,
+    "salary_equity": 4.951243718581427,
+    "equity_should": 4.951243718581427,
+    "should_negotiate": 4.951243718581427,
+    "negotiate_target": 4.951243718581427,
+    "mock": 4.951243718581427,
+    "practice": 4.951243718581427,
+    "two": 4.951243718581427,
+    "stage": 4.951243718581427,
+    "candidate": 4.951243718581427,
+    "retrieval": 4.951243718581427,
+    "mock_interview": 4.951243718581427,
+    "interview_practice": 4.951243718581427,
+    "practice_two": 4.951243718581427,
+    "two_stage": 4.951243718581427,
+    "stage_candidate": 4.951243718581427,
+    "candidate_retrieval": 4.951243718581427,
+    "retrieval_system": 4.951243718581427,
+    "negotia": 4.951243718581427,
+    "tactic": 4.951243718581427,
+    "total": 4.951243718581427,
+    "offer": 4.951243718581427,
+    "salary_negotia": 4.951243718581427,
+    "negotia_tactic": 4.951243718581427,
+    "tactic_faang": 4.951243718581427,
+    "faang_total": 4.951243718581427,
+    "total_compensa": 4.951243718581427,
+    "compensa_offer": 4.951243718581427,
+    "certifica": 4.545778610473263,
+    "aw": 4.545778610473263,
+    "gcp": 4.951243718581427,
+    "cloud_certifica": 4.951243718581427,
+    "certifica_should": 4.951243718581427,
+    "should_get": 4.951243718581427,
+    "get_aw": 4.951243718581427,
+    "aw_gcp": 4.951243718581427,
+    "certifi": 4.951243718581427,
+    "specialty": 4.951243718581427,
+    "worth": 4.951243718581427,
+    "aw_certifi": 4.951243718581427,
+    "certifi_machine": 4.951243718581427,
+    "learn_specialty": 4.951243718581427,
+    "specialty_worth": 4.951243718581427,
+    "certification": 4.545778610473263,
+    "recogniz": 4.951243718581427,
+    "certification_recogniz": 4.951243718581427,
+    "recogniz_devop": 4.951243718581427,
+    "devop_kubernet": 4.951243718581427,
+    "validate": 4.951243718581427,
+    "linkedin": 4.951243718581427,
+    "best_certification": 4.951243718581427,
+    "certification_validate": 4.951243718581427,
+    "validate_data": 4.951243718581427,
+    "science_skill": 4.951243718581427,
+    "skill_linkedin": 4.951243718581427,
+    "cka": 4.951243718581427,
+    "platform": 4.951243718581427,
+    "cka_certifica": 4.951243718581427,
+    "certifica_help": 4.951243718581427,
+    "help_get": 4.951243718581427,
+    "get_cloud": 4.951243718581427,
+    "cloud_platform": 4.951243718581427,
+    "platform_job": 4.951243718581427,
+    "ai/ml": 4.951243718581427,
+    "step": 4.258096538021482,
+    "become_ai/ml": 4.951243718581427,
+    "ai/ml_engineer": 4.951243718581427,
+    "engineer_step": 4.951243718581427,
+    "step_step": 4.545778610473263,
+    "pathway": 4.951243718581427,
+    "step_pathway": 4.951243718581427,
+    "pathway_become": 4.951243718581427,
+    "become_solution": 4.951243718581427,
+    "complete": 4.951243718581427,
+    "web": 4.951243718581427,
+    "complete_roadmap": 4.951243718581427,
+    "roadmap_transi": 4.951243718581427,
+    "transi_web": 4.951243718581427,
+    "web_developer": 4.951243718581427,
+    "developer_data": 4.951243718581427,
+    "chronological": 4.951243718581427,
+    "progression": 4.951243718581427,
+    "chronological_progression": 4.951243718581427,
+    "progression_cloud": 4.951243718581427,
+    "cloud_devop": 4.951243718581427,
+    "staff": 4.951243718581427,
+    "principal": 4.951243718581427,
+    "year": 4.951243718581427,
+    "become_staff": 4.951243718581427,
+    "staff_engineer": 4.951243718581427,
+    "engineer_principal": 4.951243718581427,
+    "principal_architect": 4.951243718581427,
+    "architect_year": 4.951243718581427,
+    "should_start": 4.951243718581427,
+    "start_first": 4.951243718581427,
+    "should_learn": 4.951243718581427,
+    "next_step": 4.951243718581427,
+    "start_deep": 4.951243718581427,
+    "learn_ne": 4.951243718581427,
+    "ne_prerequisit": 4.951243718581427,
+    "complet_statistic": 4.951243718581427,
+    "statistic_should": 4.951243718581427,
+    "should_study": 4.951243718581427,
+    "study_next": 4.951243718581427,
+    "com": 4.951243718581427,
+    "sequence": 4.951243718581427,
+    "com_next": 4.951243718581427,
+    "next_sequence": 4.951243718581427,
+    "day_life": 4.951243718581427,
+    "life_data": 4.951243718581427,
+    "every": 4.951243718581427,
+    "engineer_every": 4.951243718581427,
+    "every_day": 4.951243718581427,
+    "average": 4.951243718581427,
+    "demand": 4.951243718581427,
+    "average_market": 4.951243718581427,
+    "market_salary": 4.951243718581427,
+    "salary_demand": 4.951243718581427,
+    "demand_solution": 4.951243718581427,
+    "industry": 4.951243718581427,
+    "outlook": 4.951243718581427,
+    "decade": 4.951243718581427,
+    "industry_outlook": 4.951243718581427,
+    "outlook_cybersecurity": 4.951243718581427,
+    "cybersecurity_next": 4.951243718581427,
+    "next_decade": 4.951243718581427,
+    "explain": 4.951243718581427,
+    "large": 4.951243718581427,
+    "language": 4.951243718581427,
+    "model": 4.951243718581427,
+    "impact": 4.951243718581427,
+    "explain_large": 4.951243718581427,
+    "large_language": 4.951243718581427,
+    "language_model": 4.951243718581427,
+    "model_impact": 4.951243718581427,
+    "impact_software": 4.951243718581427,
+    "engineer_job": 4.951243718581427
+  },
+  "totalDocs": 103
+}
