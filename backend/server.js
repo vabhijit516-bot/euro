@@ -1,4 +1,6 @@
 import 'dotenv/config';
+import path from 'path';
+import { fileURLToPath } from 'url';
 import express from 'express';
 import cors from 'cors';
 import { processCareerQuery } from './nlp/careerIntelligenceEngine.js';
@@ -996,6 +998,20 @@ app.get('/api/resources/search', (req, res) => {
   const { q } = req.query;
   const searchResult = searchKnowledgeResources(q || 'machine learning');
   res.json({ success: true, searchResult });
+});
+
+// Production: Serve React Frontend SPA Build
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const frontendDistPath = path.join(__dirname, '../frontend/dist');
+
+app.use(express.static(frontendDistPath));
+
+app.get('*', (req, res, next) => {
+  if (req.path.startsWith('/api')) {
+    return next();
+  }
+  res.sendFile(path.join(frontendDistPath, 'index.html'));
 });
 
 app.listen(PORT, () => {
