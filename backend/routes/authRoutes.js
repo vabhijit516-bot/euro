@@ -21,7 +21,7 @@ router.post('/signup', async (req, res) => {
         password,
         options: {
           data: {
-            name: name || split_part(email, '@', 1),
+            name: name || (email ? email.split('@')[0] : 'Student'),
             degree: degree || 'B.Tech in Computer Science',
             targetRole: targetRole || 'Data Scientist'
           }
